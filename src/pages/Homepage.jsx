@@ -5,7 +5,7 @@ import { FaCalendarAlt, FaMapMarkerAlt, FaBullhorn, FaUsers, FaBuilding } from '
 
 // Import your actual hero images
 import heroImage1 from '../assets/Bagurugba.jpg';
-import heroImage2 from '../assets/Bihu.jpg';
+import heroImage2 from '../assets/bihu.jpg';
 import heroImage3 from '../assets/buildings1.jpg';
 import aboutImage from '../assets/Bagurugba.jpg';
 import speaker1Image from '../assets/Bagurugba.jpg';
