@@ -85,7 +85,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg py-2 px-4 md:px-8 fixed w-full z-50 transition-transform duration-300 ${
+      className={`bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg py-2 px-4 pr-6
+ md:px-8 fixed w-full z-50 transition-transform duration-300 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
