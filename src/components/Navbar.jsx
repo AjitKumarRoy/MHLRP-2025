@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Text } from '@mantine/core';
+import logo from '../assets/ictlogo.png';
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ function Navbar() {
   const fullTitle = "NERIST Conf 2025";
   const [animatedTitle, setAnimatedTitle] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -96,7 +98,7 @@ function Navbar() {
             onClick={closeMobileMenu}
           >
             <img
-              src="/src/assets/ictlogo.png"
+              src= {logo}
               alt="Conference Logo"
               className="mr-2"
               style={{ width: "70px", height: "auto" }}
