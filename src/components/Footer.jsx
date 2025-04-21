@@ -22,18 +22,22 @@ const Footer = () => {
   const iframeHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.84513236048!2d93.74029521038959!3d27.129687450635668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1745120134336!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
   const statcounterCode = `
-  <script type="text/javascript">
-  var sc_project=13125653;
-  var sc_invisible=0;
-  var sc_security="dbed7fdc";
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="hit counter"
-  href="https://statcounter.com/" target="_blank"><img class="statcounter"
-  src="https://c.statcounter.com/13125653/0/dbed7fdc/0/" alt="hit counter"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- Default Statcounter code for Conference Website
+https://nerist-conference.vercel.app/ -->
+<script type="text/javascript">
+var sc_project=13125653; 
+var sc_invisible=0; 
+var sc_security="dbed7fdc"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter" src="https://c.statcounter.com/13125653/0/dbed7fdc/0/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
   `;
 
   return (
