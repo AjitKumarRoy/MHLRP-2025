@@ -49,10 +49,10 @@ const About = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-indigo-800 mb-6 tracking-tight">
-                        About <span className="text-violet-600">ICTCON 2025</span>
+                        About <span className="text-violet-600">NERIST Conf. 2025</span>
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Learn more about our mission, vision, core values, and the dedicated team behind ICTCON 2025.
+                        Learn more about our mission, vision, core values, and the dedicated team behind NERIST Conf. 2025.
                     </p>
                 </motion.div>
 
