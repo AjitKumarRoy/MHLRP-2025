@@ -1,50 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
+import ScrollingNotification from '@/components/ScrollingNotification';
 
 // Sample important dates data (replace with your actual dates)
 const importantDates = [
     {
-        date: 'March 15, 2025',
+        date: '25th May, 2025',
         event: 'Call for Papers Opens',
         status: 'past', // 'past', 'upcoming', 'critical'
         description: 'The submission portal for research papers opens.',
     },
     {
-        date: 'May 10, 2025',
-        event: 'Paper Submission Deadline',
+        date: '31st July, 2025',
+        event: 'Last date for Abstract Submission',
         status: 'critical',
-        description: 'The last date to submit your research paper for ICTCON 2025.',
+        description: 'The last date to submit your abstract for MHLRP 2025.',
     },
     {
-        date: 'June 15, 2025',
+        date: '15th August, 2025',
         event: 'Notification of Acceptance',
         status: 'upcoming',
-        description: 'Authors will be notified about the status of their submitted papers.',
+        description: 'Authors will be notified about the status of their submitted abstract.',
     },
     {
-        date: 'June 30, 2025',
-        event: 'Early Bird Registration Deadline',
+        date: '15th October, 2025',
+        event: 'Last date for Full Paper Submission',
         status: 'upcoming',
-        description: 'Register early to avail discounted registration fees.',
+        description: 'Deadline for submitting the final version of accepted papers.',
     },
     {
-        date: 'July 15, 2025',
-        event: 'Camera-Ready Paper Submission',
+        date: '25th October, 2025',
+        event: 'Registration & Payment Deadline',
         status: 'upcoming',
-        description: 'Deadline for submitting the final, camera-ready version of accepted papers.',
+        description: 'Last date for regular registration and payment.',
     },
     {
-        date: 'July 20, 2025',
-        event: 'Regular Registration Deadline',
+        date: '6th & 7th November, 2025',
+        event: 'MHLRP 2025 Conference Dates',
         status: 'upcoming',
-        description: 'Last date for regular registration.',
-    },
-    {
-        date: 'July 25-27, 2025',
-        event: 'ICTCON 2025 Conference Dates',
-        status: 'upcoming',
-        description: 'The main dates of the International Conference on ICT.',
+        description: 'The main dates of the Conference on Mental Health and the Lived Realities of the Peripheralized.',
     },
     // Add more important dates
 ];
@@ -80,10 +75,10 @@ const ImportantDates = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-purple-800 mb-6 tracking-tight">
-                        <FaCalendarAlt className="inline mr-2 text-pink-600" /> Important Dates - ICTCON 2025
+                        <FaCalendarAlt className="inline mr-2 text-pink-600" /> Important Dates - MHLRP 2025
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Stay updated with the key deadlines and milestones for ICTCON 2025. Mark your calendars!
+                        Stay updated with the key deadlines and milestones for MHLRP 2025. Mark your calendars!
                     </p>
                 </motion.div>
 
@@ -118,7 +113,9 @@ const ImportantDates = () => {
                         </motion.div>
                     ))}
                 </div>
+                <ScrollingNotification text="Selected papers will be published in the form of an edited book by Taylor & Francis, shortly after the conclusion of the conference." />
             </div>
+            
         </motion.div>
     );
 };

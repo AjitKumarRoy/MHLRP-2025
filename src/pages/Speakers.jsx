@@ -31,22 +31,79 @@ const speakersData = [
         type: 'Invited Speakers',
         speakers: [
             {
-                name: 'Aisha Khan',
-                designation: 'Lead Data Scientist',
-                affiliation: 'DataWise Analytics',
-                bio: 'A leading voice in big data analytics and machine learning applications, Aisha brings practical insights from real-world projects.',
-                image: '/src/assets/speaker3.jpg',
+                name: 'Prof. Girishwar Misra',
+                designation: 'Vice Chancellor',
+                affiliation: 'Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha, Maharashtra',
+                bio: 'Educator, Psychologist, Social Scientist, Writer, Editor.',
+                image: '/src/assets/committee/girishwar-mishra-du.jfif',
                 twitter: 'https://twitter.com/aishakhan_data',
                 website: 'https://datawiseanalytics.com',
             },
             {
-                name: 'Ben Carter',
-                designation: 'Cybersecurity Consultant',
-                affiliation: 'SecureTech Solutions',
-                bio: 'With over a decade of experience in cybersecurity, Ben specializes in threat intelligence and risk management for large enterprises.',
-                image: '/src/assets/speaker4.jpg',
+                name: 'Dr. Anand Prakash',
+                designation: 'Prof & Head, Department of Psychology',
+                affiliation: 'University of Delhi',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/anand-prakash-du.jfif',
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
+            {
+                name: 'Prof. Rita Rani Talukdar',
+                designation: 'Department of Psychology',
+                affiliation: 'Gauhati University, Guwahati, Assam',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/rita-rani-talukdar.jpg',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Dr. Dharmeshwari Lourembam',
+                designation: 'Assistant Professor',
+                affiliation: 'Department of Psychology, Rajiv Gandhi University, Rono Hills, Doimukh, Arunachal Pradesh',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/Dharmeswari-rgu.png',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Dr. Trude Sundberg',
+                designation: 'Director',
+                affiliation: 'Q-Step Centre',
+                bio: 'Senior Lecturer, University of Kent, United Kingdom',
+                image: '/src/assets/committee/trude-sunberg-uk.webp',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Prof. Indraneel Bhowmik',
+                designation: 'Department of Economics',
+                affiliation: 'Tripura University',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/indraneel-bhowmik-tu.jpeg',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Prof. S.P.K. Jena',
+                designation: 'Senior Professor in Dept. of Applied Psychology',
+                affiliation: 'University of Delhi',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/spk-jena-du.jfif',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Prof. K.B.L. Srivastava',
+                designation: 'Professor (OB/HRD), Dept. of HSS',
+                affiliation: 'IIT Kharagpur',
+                bio: 'hello heloo heloo',
+                image: '/src/assets/committee/kbl-kgp.jfif',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            {
+                name: 'Sawang Wangchha',
+                designation: 'Founder',
+                affiliation: 'Arunachal Pradesh Queer Station',
+                bio: 'It is the first and only Queer Community Collective of Arunachal Pradesh',
+                image: '/src/assets/committee/queer-founder.jfif',
+                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            },
+            
             // Add more invited speakers
         ],
     },
@@ -83,11 +140,11 @@ const Speakers = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-purple-800 mb-6 tracking-tight">
-                        Our Esteemed <span className="text-pink-600">Speakers</span> - ICTCON 2025
+                        Our Esteemed <span className="text-pink-600">Speakers</span> - MHLRP 2025
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         We are honored to host these distinguished experts and thought leaders who will share their
-                        insights and expertise at ICTCON 2025.
+                        insights and expertise at MHLRP 2025.
                     </p>
                 </motion.div>
 

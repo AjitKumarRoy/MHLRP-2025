@@ -15,33 +15,26 @@ import Committee from "./pages/Committee";
 import ComingSoon from "./pages/ComingSoon";
 import "./App.css";
 import { MantineProvider } from "@mantine/core";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <Router>
         <Layout>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about/" element={<About />} />
-            {/* <Route path="/important-dates" element={<ImportantDates />} />
-          <Route path="/call-for-papers" element={<CallForPapers />} />
-          <Route path="/paper-submission" element={<PaperSubmission />} />
-          <Route path="/committee" element={<Committee />} />
-          <Route path="/speakers" element={<Speakers />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/program-schedule" element={<ProgramSchedule />} />
-          <Route path="/venue" element={<Venue />} />*/}
-          <Route path="/contact" element={<Contact />} /> 
-            <Route path="/important-dates/" element={<ComingSoon />} />
-            <Route path="/call-for-papers/" element={<ComingSoon />} />
-            <Route path="/paper-submission/" element={<ComingSoon />} />
-            <Route path="/committee/" element={<ComingSoon />} />
-            <Route path="/speakers/" element={<ComingSoon />} />
-            <Route path="/registration/" element={<ComingSoon />} />
-            <Route path="/program-schedule/" element={<ComingSoon />} />
-            <Route path="/venue/" element={<ComingSoon />} />
-          
+            <Route path="/important-dates" element={<ImportantDates />} />
+            <Route path="/call-for-papers" element={<CallForPapers />} />
+            <Route path="/paper-submission" element={<PaperSubmission />} />
+            <Route path="/committee" element={<Committee />} />
+            <Route path="/speakers" element={<Speakers />} />
+            <Route path="/registration" element={<Registration />} />
+            <Route path="/program-schedule" element={<ProgramSchedule />} />
+            <Route path="/venue" element={<Venue />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Layout>
       </Router>

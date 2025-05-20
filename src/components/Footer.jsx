@@ -20,7 +20,7 @@ const Footer = () => {
         <div>
           <h3 className={`text-xl font-semibold ${headingColor} mb-4`}>About NERIST Conf. 2025</h3>
           <p className={`text-sm leading-relaxed mb-4 ${textColor}`}>
-            [Insert a brief, compelling description of NERIST Conf. 2025 here. You can take inspiration from the "About Us" section of the 2024 website, focusing on the key aspects and benefits of attending.]
+            Mental health disparities persist globally, with peripheralized communities facing unique challenges due to socio-economic, cultural, and geographic exclusion. Often overlooked, these groups endure distinct psychological stressors and limited access to care. MHLRP 2025 brings together global experts to explore multidisciplinary strategies that promote mental well-being and equity for marginalized populations.
           </p>
           <p className="text-sm">
             <Link to="/about" className={`${linkHighlight} hover:underline`}>
@@ -86,17 +86,21 @@ const Footer = () => {
           <h3 className={`text-xl font-semibold ${headingColor} mb-4`}>Contact Us</h3>
           <p className={`text-sm leading-relaxed mb-2 ${textColor}`}>
             <FaMapMarkerAlt className="inline mr-2 text-teal-300" />
-            [Insert Conference Address Here]
+            <Link to="https://maps.app.goo.gl/xA9aCVeiZSBwdEna8" target='_blank' className={`${linkHighlight} hover:underline`}>
+              North Eastern Regional Institute of Science and Technology, Nirjuli, Arunachal Pradesh, India
+            </Link>
           </p>
           <p className={`text-sm leading-relaxed mb-2 ${textColor}`}>
             <FaEnvelope className="inline mr-2 text-teal-300" />
-            <Link to="mailto:[Your Conference Email]" className={`${linkHighlight} hover:underline`}>
-              [Your Conference Email]
+            <Link to="mailto:mhlrp2025@gmail.com" className={`${linkHighlight} hover:underline`}>
+              mhlrp2025@gmail.com
             </Link>
           </p>
           <p className={`text-sm leading-relaxed mb-2 ${textColor}`}>
             <FaPhone className="inline mr-2 text-teal-300" />
-            [Your Conference Phone Number]
+            <Link to="tel:+91-8837321508" className={`${linkHighlight} hover:underline`}>
+              +91-8837321508
+            </Link>
           </p>
 
           {/* Mini Google Map (Moved below the contact info) */}
@@ -121,10 +125,10 @@ const Footer = () => {
         </div>
       </div>
       <div className={`mt-8 py-4 border-t ${borderColor} text-center text-sm ${copyrightColor}`}>
-        <p>&copy; {new Date().getFullYear()} NERIST Conf. 2025. All Rights Reserved.</p>
+        <p>&copy; MHLRP {new Date().getFullYear()}. All Rights Reserved.</p>
         <p>
           Designed & Developed by{' '}
-          <Link to="[Your Organization/Developer Link]" className={`${linkHighlight} hover:underline`}>
+          <Link to="https://www.linkedin.com/in/ajitroyofficial/" target='_blank' className={`${linkHighlight} hover:underline`}>
             Ajit Kumar Roy
           </Link>
         </p>

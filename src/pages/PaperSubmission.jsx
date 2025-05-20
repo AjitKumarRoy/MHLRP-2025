@@ -34,10 +34,10 @@ const PaperSubmission = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-teal-800 mb-6 tracking-tight">
-                        Paper <span className="text-green-600">Submission</span> - ICTCON 2025
+                        Paper <span className="text-green-600">Submission</span> - MHLRP 2025
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Follow these steps to submit your research paper to ICTCON 2025. Ensure you adhere to the
+                        Follow these steps to submit your research paper to MHLRP 2025. Ensure you adhere to the
                         guidelines and use the provided templates for a smooth submission process.
                     </p>
                     <motion.a
@@ -60,7 +60,7 @@ const PaperSubmission = () => {
                         </h2>
                         <ol className="list-decimal list-inside text-gray-600 leading-relaxed space-y-4">
                             <li>
-                                **Prepare Your Paper:** Ensure your paper adheres to the ICTCON 2025 guidelines and uses the official template.
+                                <strong>Prepare Your Paper :</strong> Ensure your paper adheres to the MHLRP 2025 guidelines and uses the official template.
                                 <motion.a
                                     href="/templates" // Replace with the link to your templates page
                                     className="inline-block text-blue-500 hover:underline ml-2"
@@ -71,7 +71,7 @@ const PaperSubmission = () => {
                                 </motion.a>
                             </li>
                             <li>
-                                **Create an Account:** If you are a new user, create an account on the submission portal.
+                                <strong>Create an Account :</strong> If you are a new user, create an account on the submission portal.
                                 <motion.a
                                     href="[YOUR_SUBMISSION_PORTAL_LINK]/register" // Replace with the registration link
                                     target="_blank"
@@ -84,7 +84,7 @@ const PaperSubmission = () => {
                                 </motion.a>
                             </li>
                             <li>
-                                **Login to the Portal:** Use your credentials to log in to the paper submission system.
+                                <strong>Login to the Portal :</strong> Use your credentials to log in to the paper submission system.
                                 <motion.a
                                     href="[YOUR_SUBMISSION_PORTAL_LINK]/login" // Replace with the login link
                                     target="_blank"
@@ -97,10 +97,10 @@ const PaperSubmission = () => {
                                 </motion.a>
                             </li>
                             <li>
-                                **Submit Your Paper:** Follow the instructions on the portal to upload your paper and provide the necessary information.
+                                <strong>Submit Your Paper :</strong> Follow the instructions on the portal to upload your paper and provide the necessary information.
                             </li>
                             <li>
-                                **Confirmation:** Upon successful submission, you will receive a confirmation email.
+                                <strong>Confirmation :</strong> Upon successful submission, you will receive a confirmation email.
                             </li>
                         </ol>
                     </div>
@@ -113,11 +113,13 @@ const PaperSubmission = () => {
                             <FaFileAlt className="mr-2 text-green-500" /> Submission Guidelines
                         </h3>
                         <p className="text-gray-600 leading-relaxed mb-4">
-                            Please ensure your paper adheres to the ICTCON 2025 submission guidelines regarding formatting,
+                            Please ensure your paper adheres to the MHLRP 2025 submission guidelines regarding formatting,
                             length, and content.
                         </p>
                         <motion.a
-                            href="/guidelines" // Replace with the link to your guidelines page
+                            href="/call-for-papers" // Replace with the link to your guidelines page
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center bg-blue-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-600 transition duration-300"
                             variants={buttonVariants}
                             whileHover="hover"

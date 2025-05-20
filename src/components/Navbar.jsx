@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Text } from '@mantine/core';
-import logo from '../assets/ictlogo.png';
+import logo from '../assets/mhlrp-logo.png';
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
   const mobileMenuRef = useRef(null);
-  const fullTitle = "NERIST Conf 2025";
+  const fullTitle = "MHLRP 2025";
   const [animatedTitle, setAnimatedTitle] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -100,7 +100,7 @@ function Navbar() {
           >
             <img
               src= {logo}
-              alt="Conference Logo"
+              alt="MHLRP-2025 Logo"
               className="mr-2"
               style={{ width: "70px", height: "auto" }}
             />

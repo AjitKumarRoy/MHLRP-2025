@@ -7,25 +7,26 @@ const contactDetails = [
     {
         title: 'General Inquiries',
         icon: FaQuestionCircle,
-        email: 'info@ictcon2025.org',
-        phone: '+91 12345 67890',
+        email: 'mhlrp2025@gmail.com',
+        phone: '+91 8837321508',
     },
     {
         title: 'Registration Support',
         icon: FaHeadset,
-        email: 'registration@ictcon2025.org',
+        email: 'registration@mhlrp2025.org',
         phone: '+91 98765 43210',
     },
     {
         title: 'Technical Support',
         icon: FaCog,
-        email: 'technical@ictcon2025.org',
+        email: 'technical@mhlrp2025.org',
+        phone: '+91 98765 43210',
     },
 ];
 
 const venueDetails = {
     address: 'City Convention Center, ABC Road, XYZ Nagar, Guwahati, Assam, India',
-    googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d...YOUR_EMBED_URL_HERE...', // Replace with your actual embed URL
+    googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.84513236048!2d93.74029521038959!3d27.129687450635668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1745120134336!5m2!1sen!2sin', // Replace with your actual embed URL
 };
 
 const containerVariants = {
@@ -79,7 +80,7 @@ const Contact = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-emerald-800 mb-6 tracking-tight">
-                        Get in <span className="text-lime-700">Touch</span> with NERIST Conf. 2025
+                        Get in <span className="text-lime-700">Touch</span> with MHLRP 2025
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         We're here to help! Reach out to us through the contact information below or send us a message directly.

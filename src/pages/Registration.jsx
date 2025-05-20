@@ -6,10 +6,10 @@ import { FaUserGraduate, FaUniversity, FaBuilding, FaCheckCircle, FaCreditCard, 
 const registrationTiers = [
     {
         category: 'Students',
-        fee: 'INR 2,500 / USD 40',
-        deadline: 'May 10, 2025',
+        fee: 'INR 1000 / USD 20',
+        deadline: '25 October, 2025',
         benefits: [
-            'Access to all technical sessions',
+            'Early Bird Price - INR 750 / USD 15',
             'Conference materials',
             'Lunch and coffee breaks',
             'Certificate of participation',
@@ -21,10 +21,10 @@ const registrationTiers = [
     },
     {
         category: 'Academics',
-        fee: 'INR 5,000 / USD 80',
-        deadline: 'June 15, 2025',
+        fee: 'INR 1500 / USD 25',
+        deadline: '25 October, 2025',
         benefits: [
-            'Access to all technical sessions',
+            'Early Bird Price - INR 1200 / USD 20',
             'Conference materials',
             'Lunch and coffee breaks',
             'Certificate of participation',
@@ -37,10 +37,10 @@ const registrationTiers = [
     },
     {
         category: 'Industry Delegates',
-        fee: 'INR 7,500 / USD 120',
-        deadline: 'July 20, 2025',
+        fee: 'INR 2,500 / USD 35',
+        deadline: '25 October, 2025',
         benefits: [
-            'Access to all technical sessions',
+            'Early Bird Price - INR 2000 / USD 30',
             'Conference materials',
             'Lunch and coffee breaks',
             'Certificate of participation',
@@ -86,10 +86,10 @@ const Registration = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-teal-800 mb-6 tracking-tight">
-                        ICTCON 2025 <span className="text-cyan-600">Registration</span>
+                        MHLRP 2025 <span className="text-cyan-600">Registration</span>
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Join us for ICTCON 2025! Choose the registration category that best suits you and secure your
+                        Join us for MHLRP 2025! Choose the registration category that best suits you and secure your
                         spot today.
                     </p>
                 </motion.div>
@@ -138,7 +138,7 @@ const Registration = () => {
                         <li>Payment can be made via credit card, debit card, or bank transfer (details on the portal).</li>
                         <li>The registration fee includes access to all conference sessions, materials, and meals as specified.</li>
                         <li>Cancellation policy: [Insert your cancellation policy here].</li>
-                        <li>For any registration queries, please contact [Your Registration Email Address].</li>
+                        <li>For any registration queries, please contact : mhlrp2025@gmail.com.</li>
                     </ul>
                 </motion.div>
             </div>
