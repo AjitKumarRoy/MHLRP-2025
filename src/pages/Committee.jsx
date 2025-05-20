@@ -2,115 +2,148 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUsers } from 'react-icons/fa';
 
+// ----------------------------------------------------------------------
+// IMPORT EACH IMAGE HERE
+// Ensure these paths are correct relative to THIS FILE's location.
+// If your images are in `src/assets/committee/`, these paths should be correct assuming Committee.js is in `src/components/` or similar.
+// ----------------------------------------------------------------------
+import directorNerist from '../assets/committee/director-nerist.png';
+import sarsingGao from '../assets/committee/sarsing-gao.png';
+import anandPrakashDu from '../assets/committee/anand-prakash-du.jfif';
+import girishwarMishraDu from '../assets/committee/girishwar-mishra-du.jfif';
+import trudeSunbergUk from '../assets/committee/trude-sunberg-uk.webp';
+import ritaRaniTalukdar from '../assets/committee/rita-rani-talukdar.jpg';
+import spkJenaDu from '../assets/committee/spk-jena-du.jfif';
+import kblKgp from '../assets/committee/kbl-kgp.jfif';
+import indraneelBhowmikTu from '../assets/committee/indraneel-bhowmik-tu.jpeg';
+import rajuBorthakurNerist from '../assets/committee/Raju-borthakur-nerist.jpeg';
+import drYumaNarahNerist from '../assets/committee/Dr.-Yuma-Narah-nerist.jpg';
+import drGelingModiNerist from '../assets/committee/Dr.-Geling-Modi-nerist.jpg';
+import paridaNerist from '../assets/committee/parida-nerist.jpg';
+import arnabNerist from '../assets/committee/arnab-nerist.png';
+import ranendraNerist from '../assets/committee/ranendra-nerist.jpg';
+import yamemNerist from '../assets/committee/yamem-nerist.jpg';
+import drRaviKumarGuptaNerist from '../assets/committee/Dr.-Ravi-Kumar-Gupta-nerist.jpg';
+import kunalBorahNerist from '../assets/committee/kunal-borah-nerist.jpg';
+import santoshNerist from '../assets/committee/santosh-nerist.jpeg';
+import soniaNerist from '../assets/committee/Sonia-nerist.jpg';
+import toriBasarNerist from '../assets/committee/tori-basar-nerist.jpg';
+import kaushikRayNerist from '../assets/committee/kaushik-ray-nerist.png';
+import dharmeshwariRgu from '../assets/committee/Dharmeswari-rgu.png';
+import kakaliRgu from '../assets/committee/kakali-rgu.png';
+import pauloPortugal from '../assets/committee/paulo-portugal.webp';
+import tokoSamaNerist from '../assets/committee/toko-sama-nerist.png';
+
+
 // Sample committee member data (replace with your actual data and image paths)
 const committeeMembers = [
     {
         role: 'Chief Patron',
         members: [
-            { name: 'Prof. Narendranath S.', affiliation: 'NERIST', designation: 'Director', image: '/src/assets/committee/director-nerist.png' },
+            { name: 'Prof. Narendranath S.', affiliation: 'NERIST', designation: 'Director', image: directorNerist },
             // Add more organizing committee members
         ],
     },
     {
         role: 'Patron',
         members: [
-            { name: 'Prof. Sarsing Gao', affiliation: 'Dean (Academic)', designation: 'NERIST', image: '/src/assets/committee/sarsing-gao.png' },
+            { name: 'Prof. Sarsing Gao', affiliation: 'Dean (Academic)', designation: 'NERIST', image: sarsingGao },
             // Add more organizing committee members
         ],
     },
     {
         role: 'Advisory Committee',
         members: [
-            { name: 'Prof. Anand Prakash', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: '/src/assets/committee/anand-prakash-du.jfif' },
-            { name: 'Prof. Girishwar Misra', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: '/src/assets/committee/girishwar-mishra-du.jfif' },
-            { name: 'Dr. Trude Sundberg', affiliation: 'Sr. lecturer, Social Policy', designation: 'University of Kent, United Kingdom', image: '/src/assets/committee/trude-sunberg-uk.webp' },
-            { name: 'Prof. Rita R. Talukdar', affiliation: 'Professor, Department of Psychology', designation: 'Gauhati University', image: '/src/assets/committee/rita-rani-talukdar.jpg' },
-            { name: 'Prof. S.P.K. Jena', affiliation: 'Professor, Department of Applied Psychology', designation: 'Delhi University', image: '/src/assets/committee/spk-jena-du.jfif' },
-            { name: 'Prof. K. B. L. Srivastava', affiliation: 'Professor (Psychology), Department of HSS', designation: 'IIT KGP', image: '/src/assets/committee/kbl-kgp.jfif' },
-            { name: 'Prof. Indraneel Bhowmik', affiliation: 'Professor, Department of Economics', designation: 'Tripura University', image: '/src/assets/committee/indraneel-bhowmik-tu.jpeg' },
+            { name: 'Prof. Anand Prakash', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: anandPrakashDu },
+            { name: 'Prof. Girishwar Misra', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: girishwarMishraDu },
+            { name: 'Dr. Trude Sundberg', affiliation: 'Sr. lecturer, Social Policy', designation: 'University of Kent, United Kingdom', image: trudeSunbergUk },
+            { name: 'Prof. Rita R. Talukdar', affiliation: 'Professor, Department of Psychology', designation: 'Gauhati University', image: ritaRaniTalukdar },
+            { name: 'Prof. S.P.K. Jena', affiliation: 'Professor, Department of Applied Psychology', designation: 'Delhi University', image: spkJenaDu },
+            { name: 'Prof. K. B. L. Srivastava', affiliation: 'Professor (Psychology), Department of HSS', designation: 'IIT KGP', image: kblKgp },
+            { name: 'Prof. Indraneel Bhowmik', affiliation: 'Professor, Department of Economics', designation: 'Tripura University', image: indraneelBhowmikTu },
             // Add more organizing committee members
         ],
     },
     {
         role: 'Conference Chair',
         members: [
-            { name: 'Prof. Raju Barthakur', affiliation: 'Head, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Raju-borthakur-nerist.jpeg' },
+            { name: 'Prof. Raju Barthakur', affiliation: 'Head, Department of HSS', designation: 'NERIST', image: rajuBorthakurNerist },
             // Add more organizing committee members
         ],
     },
     {
         role: 'Convener',
         members: [
-            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Yuma-Narah-nerist.jpg' },
+            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drYumaNarahNerist },
         ],
     },
     {
         role: 'Joint Convener',
         members: [
-            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Geling-Modi-nerist.jpg' },
+            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drGelingModiNerist },
             // Add more advisory committee members
         ],
     },
     {
         role: 'Organizing Committee',
         members: [
-            { name: 'Prof. P. Parida', affiliation: 'Chairperson, Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/parida-nerist.jpg' },
-            { name: 'Prof. Raju Barthakur', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Raju-borthakur-nerist.jpeg' },
-            { name: 'Prof. Arnab Bandyopadhyay', affiliation: 'Professor, Department of AE', designation: 'NERIST', image: '/src/assets/committee/arnab-nerist.png' },
-            { name: 'Shri Ranendra Prasad', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/ranendra-nerist.jpg' },
-            { name: 'Dr. Yamem Tamut', affiliation: 'Associate Professor, Department of CE', designation: 'NERIST', image: '/src/assets/committee/yamem-nerist.jpg' },
-            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Ravi-Kumar-Gupta-nerist.jpg' },
-            { name: 'Dr. Kunal Borah', affiliation: 'Associate Professor, Department of Physics', designation: 'NERIST', image: '/src/assets/committee/kunal-borah-nerist.jpg' },
-            { name: 'Dr. Santosh Tamang', affiliation: 'Assistant Professor, Department of ME', designation: 'NERIST', image: '/src/assets/committee/santosh-nerist.jpeg' },
-            { name: 'Dr. Chiging Sonia', affiliation: 'Assistant Professor, Department of Physics', designation: 'NERIST', image: '/src/assets/committee/Sonia-nerist.jpg' },
-            { name: 'Ms. Tori Basar', affiliation: 'Assistant Professor, Department of CE', designation: 'NERIST', image: '/src/assets/committee/tori-basar-nerist.jpg' },
-            { name: 'Mr. Kaushik Ray', affiliation: 'Assistant Professor, Department of CSE', designation: 'NERIST', image: '/src/assets/committee/kaushik-ray-nerist.png' },
+            { name: 'Prof. P. Parida', affiliation: 'Chairperson, Professor, Department of HSS', designation: 'NERIST', image: paridaNerist },
+            { name: 'Prof. Raju Barthakur', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: rajuBorthakurNerist },
+            { name: 'Prof. Arnab Bandyopadhyay', affiliation: 'Professor, Department of AE', designation: 'NERIST', image: arnabNerist },
+            { name: 'Shri Ranendra Prasad', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: ranendraNerist },
+            { name: 'Dr. Yamem Tamut', affiliation: 'Associate Professor, Department of CE', designation: 'NERIST', image: yamemNerist },
+            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: drRaviKumarGuptaNerist },
+            { name: 'Dr. Kunal Borah', affiliation: 'Associate Professor, Department of Physics', designation: 'NERIST', image: kunalBorahNerist },
+            { name: 'Dr. Santosh Tamang', affiliation: 'Assistant Professor, Department of ME', designation: 'NERIST', image: santoshNerist },
+            { name: 'Dr. Chiging Sonia', affiliation: 'Assistant Professor, Department of Physics', designation: 'NERIST', image: soniaNerist },
+            { name: 'Ms. Tori Basar', affiliation: 'Assistant Professor, Department of CE', designation: 'NERIST', image: toriBasarNerist },
+            { name: 'Mr. Kaushik Ray', affiliation: 'Assistant Professor, Department of CSE', designation: 'NERIST', image: kaushikRayNerist },
             // Add more advisory committee members
         ],
     },
     {
         role: 'Review Board',
         members: [
-            { name: 'Prof. P. Parida', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/parida-nerist.jpg' },
-            { name: 'Prof. Anand Prakash', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: '/src/assets/committee/anand-prakash-du.jfif' },
-            { name: 'Prof. Rita R. Talukdar', affiliation: 'Professor, Department of Psychology', designation: 'Gauhati University', image: '/src/assets/committee/rita-rani-talukdar.jpg' },
-            { name: 'Prof. S.P.K. Jena', affiliation: 'Professor, Department of Applied Psychology', designation: 'Delhi University', image: '/src/assets/committee/spk-jena-du.jfif' },
-            { name: 'Prof. K. B. L. Srivastava', affiliation: 'Professor (Psychology), Department of HSS', designation: 'IIT KGP', image: '/src/assets/committee/kbl-kgp.jfif' },
-            { name: 'Dr. Dharmeshwari Lourembam', affiliation: 'Assistant Professor, Department of Psychology', designation: 'RGU', image: '/src/assets/committee/Dharmeswari-rgu.png' },
-            { name: 'Dr. Kakali Goswami', affiliation: 'Assistant Professor, Department of Psychology', designation: 'RGU', image: '/src/assets/committee/kakali-rgu.png' },
-            { name: 'Prof. Indraneel Bhowmik', affiliation: 'Professor, Department of Economics', designation: 'TU', image: '/src/assets/committee/indraneel-bhowmik-tu.jpeg' },
-            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Ravi-Kumar-Gupta-nerist.jpg' },
-            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Yuma-Narah-nerist.jpg' },
-            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Geling-Modi-nerist.jpg' },
+            { name: 'Prof. P. Parida', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: paridaNerist },
+            { name: 'Prof. Anand Prakash', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: anandPrakashDu },
+            { name: 'Prof. Rita R. Talukdar', affiliation: 'Professor, Department of Psychology', designation: 'Gauhati University', image: ritaRaniTalukdar },
+            { name: 'Prof. S.P.K. Jena', affiliation: 'Professor, Department of Applied Psychology', designation: 'Delhi University', image: spkJenaDu },
+            { name: 'Prof. K. B. L. Srivastava', affiliation: 'Professor (Psychology), Department of HSS', designation: 'IIT KGP', image: kblKgp },
+            { name: 'Dr. Dharmeshwari Lourembam', affiliation: 'Assistant Professor, Department of Psychology', designation: 'RGU', image: dharmeshwariRgu },
+            { name: 'Dr. Kakali Goswami', affiliation: 'Assistant Professor, Department of Psychology', designation: 'RGU', image: kakaliRgu },
+            { name: 'Prof. Indraneel Bhowmik', affiliation: 'Professor, Department of Economics', designation: 'TU', image: indraneelBhowmikTu },
+            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: drRaviKumarGuptaNerist },
+            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drYumaNarahNerist },
+            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drGelingModiNerist },
             // Add more advisory committee members
         ],
     },
     {
         role: 'Editorial Committee',
         members: [
-            { name: 'Prof. J. Paulo Davim', affiliation: 'Series Editor', designation: 'University of Aveiro, Portugal', image: '/src/assets/committee/paulo-portugal.webp' },
-            { name: 'Prof. Girishwar Misra', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: '/src/assets/committee/girishwar-mishra-du.jfif' },
-            { name: 'Prof. Raju Barthakur', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Raju-borthakur-nerist.jpeg' },
-            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Yuma-Narah-nerist.jpg' },
-            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Geling-Modi-nerist.jpg' },
+            { name: 'Prof. J. Paulo Davim', affiliation: 'Series Editor', designation: 'University of Aveiro, Portugal', image: pauloPortugal },
+            { name: 'Prof. Girishwar Misra', affiliation: 'Professor, Department of Psychology', designation: 'University of Delhi', image: girishwarMishraDu },
+            { name: 'Prof. Raju Barthakur', affiliation: 'Professor, Department of HSS', designation: 'NERIST', image: rajuBorthakurNerist },
+            { name: 'Dr. Yuma Narah', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drYumaNarahNerist },
+            { name: 'Dr. Geling Modi', affiliation: 'Assistant Professor, Department of HSS', designation: 'NERIST', image: drGelingModiNerist },
             // Add more advisory committee members
         ],
     },
     {
         role: 'Finance Committee',
         members: [
-            { name: 'Prof. Arnab Bandyopadhyay', affiliation: 'Professor, Department of AE', designation: 'NERIST', image: '/src/assets/committee/arnab-nerist.png' },
-            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: '/src/assets/committee/Dr.-Ravi-Kumar-Gupta-nerist.jpg' },
-            { name: 'Shri Toko Shama', affiliation: 'Assistant Registrar', designation: 'NERIST', image: '/src/assets/committee/toko-sama-nerist.png' },
+            { name: 'Prof. Arnab Bandyopadhyay', affiliation: 'Professor, Department of AE', designation: 'NERIST', image: arnabNerist },
+            { name: 'Dr. Ravi Kumar Gupta', affiliation: 'Associate Professor, Department of HSS', designation: 'NERIST', image: drRaviKumarGuptaNerist },
+            { name: 'Shri Toko Shama', affiliation: 'Assistant Registrar', designation: 'NERIST', image: tokoSamaNerist },
             // Add more advisory committee members
         ],
     },
     {
         role: 'Publicity Committee',
         members: [
-            { name: 'Dr. Kunal Borah', affiliation: 'Associate Professor, Department of Physics', designation: 'NERIST', image: '/src/assets/committee/kunal-borah-nerist.jpg' },
-            { name: 'Dr. Yamem Tamut', affiliation: 'Associate Professor, Department of CE', designation: 'NERIST', image: '/src/assets/committee/yamem-nerist.jpg' },
-            { name: 'Dr. Santosh Tamang', affiliation: 'Assistant Professor, Department of ME', designation: 'NERIST', image: '/src/assets/committee/santosh-nerist.jpeg' },
+            { name: 'Dr. Kunal Borah', affiliation: 'Associate Professor, Department of Physics', designation: 'NERIST', image: kunalBorahNerist },
+            { name: 'Dr. Yamem Tamut', affiliation: 'Associate Professor, Department of CE', designation: 'NERIST', image: yamemNerist },
+            { name: 'Dr. Santosh Tamang', affiliation: 'Assistant Professor, Department of ME', designation: 'NERIST', image: santoshNerist },
             // Add more advisory committee members
         ],
     },
@@ -170,7 +203,7 @@ const Committee = () => {
                                 >
                                     <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
                                         <img
-                                            src={member.image}
+                                            src={member.image} // Now uses the imported variable
                                             alt={member.name}
                                             className="object-cover w-full h-full"
                                         />
