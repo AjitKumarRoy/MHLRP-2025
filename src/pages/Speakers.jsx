@@ -1,6 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaTwitter, FaGlobe, FaMicrophone  } from 'react-icons/fa'; // Example social icons
+import { FaLinkedin, FaTwitter, FaGlobe, FaMicrophone } from 'react-icons/fa'; // Example social icons
+
+// ----------------------------------------------------------------------
+// IMPORT EACH IMAGE HERE
+// Ensure these paths are correct relative to THIS FILE's location.
+// If your images are in `src/assets/` and `src/assets/committee/`,
+// these relative paths should be correct assuming Speakers.js is in `src/components/` or similar.
+// ----------------------------------------------------------------------
+import speaker1 from '../assets/committee/girishwar-mishra-du.jfif';
+import speaker2 from '../assets/committee/girishwar-mishra-du.jfif';
+import girishwarMishraDu from '../assets/committee/girishwar-mishra-du.jfif';
+import anandPrakashDu from '../assets/committee/anand-prakash-du.jfif';
+import ritaRaniTalukdar from '../assets/committee/rita-rani-talukdar.jpg';
+import dharmeshwariRgu from '../assets/committee/Dharmeswari-rgu.png';
+import trudeSunbergUk from '../assets/committee/trude-sunberg-uk.webp';
+import indraneelBhowmikTu from '../assets/committee/indraneel-bhowmik-tu.jpeg';
+import spkJenaDu from '../assets/committee/spk-jena-du.jfif';
+import kblKgp from '../assets/committee/kbl-kgp.jfif';
+import queerFounder from '../assets/committee/queer-founder.jfif';
+
 
 // Sample speaker data (replace with your actual data and image paths)
 const speakersData = [
@@ -12,7 +31,7 @@ const speakersData = [
                 designation: 'Chief Innovation Officer',
                 affiliation: 'Global Tech Innovations Inc.',
                 bio: 'A visionary leader in AI and sustainable technology, Dr. Vance has revolutionized the industry with her groundbreaking research.',
-                image: '/src/assets/speaker1.jpg',
+                image: speaker1, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/eleanorvance',
                 twitter: 'https://twitter.com/eleanorvance',
             },
@@ -21,7 +40,7 @@ const speakersData = [
                 designation: 'Professor of Robotics',
                 affiliation: 'Tokyo Institute of Advanced Robotics',
                 bio: 'A world-renowned expert in human-robot interaction and advanced automation, Professor Tanaka\'s work has been pivotal in the field.',
-                image: '/src/assets/speaker2.jpg',
+                image: speaker2, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/kenjitanaka',
             },
             // Add more keynote speakers
@@ -35,7 +54,7 @@ const speakersData = [
                 designation: 'Vice Chancellor',
                 affiliation: 'Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha, Maharashtra',
                 bio: 'Educator, Psychologist, Social Scientist, Writer, Editor.',
-                image: '/src/assets/committee/girishwar-mishra-du.jfif',
+                image: girishwarMishraDu, // Using imported image
                 twitter: 'https://twitter.com/aishakhan_data',
                 website: 'https://datawiseanalytics.com',
             },
@@ -44,7 +63,7 @@ const speakersData = [
                 designation: 'Prof & Head, Department of Psychology',
                 affiliation: 'University of Delhi',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/anand-prakash-du.jfif',
+                image: anandPrakashDu, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -52,7 +71,7 @@ const speakersData = [
                 designation: 'Department of Psychology',
                 affiliation: 'Gauhati University, Guwahati, Assam',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/rita-rani-talukdar.jpg',
+                image: ritaRaniTalukdar, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -60,7 +79,7 @@ const speakersData = [
                 designation: 'Assistant Professor',
                 affiliation: 'Department of Psychology, Rajiv Gandhi University, Rono Hills, Doimukh, Arunachal Pradesh',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/Dharmeswari-rgu.png',
+                image: dharmeshwariRgu, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -68,7 +87,7 @@ const speakersData = [
                 designation: 'Director',
                 affiliation: 'Q-Step Centre',
                 bio: 'Senior Lecturer, University of Kent, United Kingdom',
-                image: '/src/assets/committee/trude-sunberg-uk.webp',
+                image: trudeSunbergUk, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -76,7 +95,7 @@ const speakersData = [
                 designation: 'Department of Economics',
                 affiliation: 'Tripura University',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/indraneel-bhowmik-tu.jpeg',
+                image: indraneelBhowmikTu, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -84,7 +103,7 @@ const speakersData = [
                 designation: 'Senior Professor in Dept. of Applied Psychology',
                 affiliation: 'University of Delhi',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/spk-jena-du.jfif',
+                image: spkJenaDu, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -92,7 +111,7 @@ const speakersData = [
                 designation: 'Professor (OB/HRD), Dept. of HSS',
                 affiliation: 'IIT Kharagpur',
                 bio: 'hello heloo heloo',
-                image: '/src/assets/committee/kbl-kgp.jfif',
+                image: kblKgp, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
             {
@@ -100,10 +119,10 @@ const speakersData = [
                 designation: 'Founder',
                 affiliation: 'Arunachal Pradesh Queer Station',
                 bio: 'It is the first and only Queer Community Collective of Arunachal Pradesh',
-                image: '/src/assets/committee/queer-founder.jfif',
+                image: queerFounder, // Using imported image
                 linkedin: 'https://www.linkedin.com/in/bencartersecurity',
             },
-            
+
             // Add more invited speakers
         ],
     },
@@ -163,7 +182,7 @@ const Speakers = () => {
                                 >
                                     <div className="relative w-28 h-28 rounded-full overflow-hidden mb-4">
                                         <img
-                                            src={speaker.image}
+                                            src={speaker.image} // Using imported image
                                             alt={speaker.name}
                                             className="object-cover w-full h-full"
                                         />
