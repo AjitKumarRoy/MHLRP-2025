@@ -95,11 +95,11 @@ const ProgramSchedule = () => {
                     variants={{ initial: { opacity: 0, y: -30 }, animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
                 >
                     <h1 className="text-4xl font-extrabold text-blue-800 mb-6 tracking-tight">
-                        ICTCON 2025 <span className="text-indigo-600">Program Schedule</span>
+                        MHLRP 2025 <span className="text-indigo-600">Program Schedule</span>
                     </h1>
                     <p className="text-lg text-gray-700 leading-relaxed">
                         Explore the detailed schedule of presentations, keynotes, workshops, and other exciting events
-                        planned for ICTCON 2025.
+                        planned for MHLRP 2025.
                     </p>
                 </motion.div>
 

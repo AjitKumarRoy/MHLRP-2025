@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaBuilding, FaHotel, FaPlane, FaTrain, FaCar } from 'react-icons/fa';
 
+import venuPic from '../assets/NERIST-gate.png'; 
+
 // Replace with your Google Maps embed URL (see instructions below)
   const venueGoogleMapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.84513236048!2d93.74029521038959!3d27.129687450635668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1745120134336!5m2!1sen!2sin" ;
 
@@ -12,7 +14,7 @@ const venueDetails = {
     description: 'A premier event space equipped with state-of-the-art facilities, offering a comfortable and conducive environment for MHLRP 2025.',
     highlights: ['Spacious conference halls', 'Modern audio-visual equipment', 'Free Wi-Fi', 'On-site catering'],
     googleMapsEmbedUrl: venueGoogleMapLink,
-    venueImage: '/src/assets/NERIST-gate.png', // Replace with an actual image of the venue
+    venueImage: venuPic, // Replace with an actual image of the venue
 };
 
 // Optional accommodation data
