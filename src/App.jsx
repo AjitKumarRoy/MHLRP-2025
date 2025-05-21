@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/Layout";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
@@ -20,24 +21,26 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Router>
-        <Layout>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about/" element={<About />} />
-            <Route path="/important-dates" element={<ImportantDates />} />
-            <Route path="/call-for-papers" element={<CallForPapers />} />
-            <Route path="/paper-submission" element={<PaperSubmission />} />
-            <Route path="/committee" element={<Committee />} />
-            <Route path="/speakers" element={<Speakers />} />
-            <Route path="/registration" element={<Registration />} />
-            <Route path="/program-schedule" element={<ProgramSchedule />} />
-            <Route path="/venue" element={<Venue />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Layout>
-      </Router>
+      <HelmetProvider>
+        <Router>
+          <Layout>
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/about/" element={<About />} />
+              <Route path="/important-dates" element={<ImportantDates />} />
+              <Route path="/call-for-papers" element={<CallForPapers />} />
+              <Route path="/paper-submission" element={<PaperSubmission />} />
+              <Route path="/committee" element={<Committee />} />
+              <Route path="/speakers" element={<Speakers />} />
+              <Route path="/registration" element={<Registration />} />
+              <Route path="/program-schedule" element={<ProgramSchedule />} />
+              <Route path="/venue" element={<Venue />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Layout>
+        </Router>
+      </HelmetProvider>
     </MantineProvider>
   );
 }

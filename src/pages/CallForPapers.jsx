@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import {
   FaFileAlt,
   FaUpload,
@@ -8,6 +9,61 @@ import {
   FaEye,
   FaBook,
 } from "react-icons/fa";
+
+
+
+// Conference-specific constants (consistent with About.jsx, Committee.jsx, ImportantDates.jsx)
+const conferenceName = "Invisible Struggles: Mental Health and the Lived Realities of the Peripheralized";
+const conferenceShortForm = "MHLRP 2025";
+const hosting = "Department of Humanities and Social Sciences";
+const venue = "North Eastern Regional Institute of Science and Technology (NERIST)";
+const callForPapersDescription = "Submit your research to MHLRP 2025, a mental health conference at NERIST, November 6-7, 2025. Follow our guidelines for abstracts (250 words, APA 7th edition) and full papers.";
+const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
+const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+
+// Structured data for the Call for Papers page
+const eventData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": `Call for Papers - ${conferenceShortForm}`,
+  "description": callForPapersDescription,
+  "url": `${baseUrl}/call-for-papers`,
+  "isPartOf": {
+    "@type": "Event",
+    "name": conferenceName,
+    "startDate": "2025-11-06",
+    "endDate": "2025-11-07",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": venue,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nirjuli",
+        "addressLocality": "Itanagar",
+        "addressRegion": "Arunachal Pradesh",
+        "postalCode": "791109",
+        "addressCountry": "IN"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": hosting,
+      "url": "https://nerist.ac.in/humanities-and-social-sciences-department/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "Call for Papers Submission",
+      "description": "Opportunity to submit abstracts and full papers for MHLRP 2025, with accepted papers published in conference proceedings.",
+      "validThrough": "2025-10-15", // Last date for full paper submission
+      "url": `${baseUrl}/paper-submission`
+    }
+  }
+};
+
+
+
 
 const containerVariants = {
   initial: { opacity: 0 },
@@ -49,6 +105,36 @@ const CallForPapers = () => {
       initial="initial"
       animate="animate"
     >
+
+
+      <Helmet>
+        <title>Call for Papers | {conferenceShortForm}: Mental Health Conference | NERIST</title>
+        <meta name="description" content={callForPapersDescription} />
+        <meta
+          name="keywords"
+          content="MHLRP 2025 call for papers, mental health conference submission, NERIST, Arunachal Pradesh, 2025, abstract guidelines, APA 7th edition, full paper submission, conference proceedings"
+        />
+        <meta property="og:title" content={`Call for Papers - ${conferenceName}`} />
+        <meta
+          property="og:description"
+          content="Join MHLRP 2025 by submitting abstracts (250 words) and full papers (2500-3000 words) by October 15, 2025. Accepted papers will be published in conference proceedings."
+        />
+        <meta property="og:image" content={`${baseUrl}${logoImage}`} />
+        <meta property="og:url" content={`${baseUrl}/call-for-papers`} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`Call for Papers - ${conferenceName}`} />
+        <meta
+          property="twitter:description"
+          content="Join MHLRP 2025 by submitting abstracts (250 words) and full papers (2500-3000 words) by October 15, 2025. Accepted papers will be published in conference proceedings."
+        />
+        <meta property="twitter:image" content={`${baseUrl}${logoImage}`} />
+        <script type="application/ld+json">{JSON.stringify(eventData)}</script>
+        <link rel="canonical" href={`${baseUrl}/call-for-papers`} />
+      </Helmet>
+
+
+
       <div className="container mx-auto px-8 pt-20">
         {/* Hero Section */}
         <motion.div
