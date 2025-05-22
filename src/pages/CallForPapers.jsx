@@ -323,10 +323,7 @@ const CallForPapers = () => {
               <FaBook className="mr-2 text-purple-500" /> Publication
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Accepted and presented papers will be published in the conference
-              proceedings, which will be indexed in major academic databases.
-              Select high-quality papers may also be considered for publication
-              in partner journals (details will be announced).
+              Selected papers will be published in the form of an edited book by Taylor & Francis, shortly after the conclusion of the conference. 
             </p>
           </div>
         </motion.div>

@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import ImportantDates from "./pages/ImportantDates";
 import PaperSubmission from "./pages/PaperSubmission";
 import Committee from "./pages/Committee";
+import PaymentDetails from "./pages/PaymentDetails";
 import ComingSoon from "./pages/ComingSoon";
 import "./App.css";
 import { MantineProvider } from "@mantine/core";
@@ -34,7 +35,8 @@ function App() {
               <Route path="/committee" element={<Committee />} />
               <Route path="/speakers" element={<Speakers />} />
               <Route path="/registration" element={<Registration />} />
-              <Route path="/program-schedule" element={<ProgramSchedule />} />
+              <Route path="/payment-details" element={<PaymentDetails />} />
+              <Route path="/program-schedule" element={<ComingSoon />} />
               <Route path="/venue" element={<Venue />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

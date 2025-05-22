@@ -1,6 +1,16 @@
+// src/pages/Contact.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaQuestionCircle, FaHeadset, FaCog } from 'react-icons/fa';
+import emailjs from '@emailjs/browser'; // Import EmailJS
+
+// --- EmailJS Configuration (Add these lines) ---
+// IMPORTANT: Replace with your actual IDs.
+// For production, you should use environment variables (see Step 4).
+const EMAILJS_SERVICE_ID = import.meta.env.EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.EMAILJS_PUBLIC_KEY;
+// --- End EmailJS Configuration ---
 
 // Replace with your actual contact information and Google Maps embed URL
 const contactDetails = [
@@ -10,22 +20,10 @@ const contactDetails = [
         email: 'mhlrp2025@gmail.com',
         phone: '+91 8837321508',
     },
-    {
-        title: 'Registration Support',
-        icon: FaHeadset,
-        email: 'registration@mhlrp2025.org',
-        phone: '+91 98765 43210',
-    },
-    {
-        title: 'Technical Support',
-        icon: FaCog,
-        email: 'technical@mhlrp2025.org',
-        phone: '+91 98765 43210',
-    },
 ];
 
 const venueDetails = {
-    address: 'City Convention Center, ABC Road, XYZ Nagar, Guwahati, Assam, India',
+    address: 'NERIST, NIRJULI, 791109, ARUNACHAL PRADESH, India',
     googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.84513236048!2d93.74029521038959!3d27.129687450635668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1745120134336!5m2!1sen!2sin', // Replace with your actual embed URL
 };
 
@@ -53,6 +51,8 @@ const Contact = () => {
         subject: '',
         message: '',
     });
+    const [isSubmitting, setIsSubmitting] = useState(false); // State for loading
+    const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' or 'error'
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -60,10 +60,24 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // In a real application, you would handle form submission here
-        console.log('Form submitted:', formData);
-        // Reset form after submission (optional)
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setIsSubmitting(true);
+        setSubmissionStatus(null); // Reset status
+
+        // Send email using EmailJS
+        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, e.target, EMAILJS_PUBLIC_KEY)
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                setSubmissionStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' }); // Clear form
+            }, (error) => {
+                console.error('Email sending failed:', error.text);
+                setSubmissionStatus('error');
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+                // Optionally clear status message after a few seconds
+                setTimeout(() => setSubmissionStatus(null), 5000);
+            });
     };
 
     return (
@@ -88,7 +102,7 @@ const Contact = () => {
                 </motion.div>
 
                 {/* Contact Information Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 mb-12">
                     {contactDetails.map((contact, index) => (
                         <motion.div
                             key={index}
@@ -133,7 +147,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 id="name"
-                                name="name"
+                                name="name" // IMPORTANT: Match with EmailJS template variable
                                 value={formData.name}
                                 onChange={handleChange}
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -145,7 +159,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 id="email"
-                                name="email"
+                                name="email" // IMPORTANT: Match with EmailJS template variable
                                 value={formData.email}
                                 onChange={handleChange}
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -157,7 +171,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 id="subject"
-                                name="subject"
+                                name="subject" // IMPORTANT: Match with EmailJS template variable
                                 value={formData.subject}
                                 onChange={handleChange}
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -167,7 +181,7 @@ const Contact = () => {
                             <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">Message</label>
                             <textarea
                                 id="message"
-                                name="message"
+                                name="message" // IMPORTANT: Match with EmailJS template variable
                                 value={formData.message}
                                 onChange={handleChange}
                                 rows="4"
@@ -175,13 +189,24 @@ const Contact = () => {
                                 required
                             ></textarea>
                         </div>
+                        {/* Submission Status Message */}
+                        {isSubmitting && (
+                            <p className="text-blue-600">Sending message...</p>
+                        )}
+                        {submissionStatus === 'success' && (
+                            <p className="text-green-600">Message sent successfully! We'll get back to you soon.</p>
+                        )}
+                        {submissionStatus === 'error' && (
+                            <p className="text-red-600">Failed to send message. Please try again later.</p>
+                        )}
                         <motion.button
                             type="submit"
-                            className="bg-lime-500 hover:bg-lime-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline"
+                            className={`bg-lime-500 hover:bg-lime-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                             variants={buttonVariants}
                             whileHover="hover"
+                            disabled={isSubmitting} // Disable button while submitting
                         >
-                            Send Message
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </motion.button>
                     </form>
                 </motion.div>

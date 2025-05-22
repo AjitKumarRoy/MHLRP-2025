@@ -1,6 +1,8 @@
+// src/components/Registration.jsx 
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUserGraduate, FaUniversity, FaBuilding, FaCheckCircle, FaCreditCard, FaInfoCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 // Sample registration data (replace with your actual data)
 const registrationTiers = [
@@ -14,7 +16,6 @@ const registrationTiers = [
             'Lunch and coffee breaks',
             'Certificate of participation',
         ],
-        link: '[YOUR_STUDENT_REGISTRATION_LINK]',
         icon: FaUserGraduate,
         color: 'bg-blue-100 text-blue-700',
         buttonColor: 'bg-blue-500 hover:bg-blue-600',
@@ -30,7 +31,6 @@ const registrationTiers = [
             'Certificate of participation',
             'Opportunity to present paper',
         ],
-        link: '[YOUR_ACADEMIC_REGISTRATION_LINK]',
         icon: FaUniversity,
         color: 'bg-green-100 text-green-700',
         buttonColor: 'bg-green-500 hover:bg-green-600',
@@ -47,7 +47,6 @@ const registrationTiers = [
             'Networking opportunities',
             'Industry-focused sessions',
         ],
-        link: '[YOUR_INDUSTRY_REGISTRATION_LINK]',
         icon: FaBuilding,
         color: 'bg-indigo-100 text-indigo-700',
         buttonColor: 'bg-indigo-500 hover:bg-indigo-600',
@@ -115,16 +114,17 @@ const Registration = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <motion.a
-                                href={tier.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            {/* Changed to Link component to navigate internally */}
+                            <Link
+                                to="/payment-details" // The path to your PaymentDetails page
+                                state={{ category: tier.category, fee: tier.fee }} // Pass data to the PaymentDetails page
                                 className={`inline-flex items-center justify-center ${tier.buttonColor} text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition duration-300 mt-4`}
-                                variants={buttonVariants}
-                                whileHover="hover"
+                                // Note: For Framer Motion animations on Link, you might need to wrap the Link in a motion.div
+                                // or use a specific Framer Motion Link component if your version provides one.
+                                // The Tailwind hover effects will still work.
                             >
                                 <FaCreditCard className="mr-2" /> Register Now
-                            </motion.a>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

@@ -56,7 +56,7 @@ const ComingSoon = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.2 }}
                 >
-                    ICTCON 2025
+                    MHLRP 2025
                 </motion.h1>
                 <motion.p className="text-lg md:text-xl text-gray-300 mb-6"
                     style={{ fontFamily: 'Open Sans, sans-serif' }}

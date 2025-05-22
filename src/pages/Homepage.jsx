@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 
 import KnowledgePartnersSection from "@/components/KnowledgePartners";
+import SupportersSection from "@/components/Supporters";
 
 // Import your actual hero images
 import heroImage1 from "../assets/background-image/nerist-background1.jpg";
@@ -18,8 +19,8 @@ import heroImage2 from "../assets/background-image/nerist-background2.jpg";
 import heroImage3 from "../assets/background-image/nerist-background3.jpg";
 import heroImage4 from "../assets/background-image/nerist-library.jpg";
 import aboutImage from "../assets/mhlrp-logo.png";
-import speaker1Image from "../assets/committee/trude-sunberg-uk.webp";
-import speaker2Image from "../assets/committee/kbl-kgp.jfif";
+import speaker1Image from "../assets/committee/demo-speaker.png";
+import speaker2Image from "../assets/committee/demo-speaker.png";
 import venueImage from "../assets/NERIST-gate.png";
 import sponsor1Logo from "../assets/knowledge-partner/bridge-logo.jpeg";
 import sponsor2Logo from "../assets/knowledge-partner/mariwala-logo.png";
@@ -31,23 +32,31 @@ const conferenceShortForm = "MHLRP 2025";
 const hosting = "Department of Humanities and Social Sciences";
 const venue = "North Eastern Regional Institute of Science and Technology";
 const venueShortForm = "NERIST";
+const deemedUniversity = "Deemed-to-be	University	under	the	Ministry	of	Education,	Government	of	India";
 const aboutText =
   "Mental health remains a global concern, with marginalized and peripheralized communities experiencing significant disparities in access to mental health care, social support, and economic opportunities. These populations, often neglected in mainstream discussions, face unique psychological stressors arising from socio-political, economic, cultural and geographical exclusion. Addressing their mental health concerns requires a multidisciplinary approach involving psychology, public health, social work, policy-making, and community engagement. The conference aims to bring together international experts, researchers, practitioners, and policymakers to deliberate on effective strategies for promoting mental well-being among peripheralized populations.";
 const keynoteSpeakers = [
   {
-    name: "Dr. Trude Sundberg",
-    title: "Director",
-    affiliation: "Q-Step Centre",
+    name: "To be",
+    title: "Updated",
+    affiliation: "soon",
     image: speaker1Image,
     link: "/speakers",
   },
   {
-    name: "Prof. K.B.L. Srivastava",
-    title: "Professor (OB/HRD), Dept. of HSS",
-    affiliation: "IIT Kharagpur",
+    name: "To be ",
+    title: "Updated",
+    affiliation: "soon",
     image: speaker2Image,
     link: "/speakers",
   },
+  // {
+  //   name: "Dr. Trude Sundberg",
+  //   title: "Director",
+  //   affiliation: "Q-Step Centre",
+  //   image: speaker1Image,
+  //   link: "/speakers",
+  // },
   // Add more speakers
 ];
 const importantDates = [
@@ -282,6 +291,19 @@ const Homepage = () => {
             >
               ({venueShortForm})
             </motion.h1>
+            <motion.h1
+              className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight"
+              variants={{
+                initial: { opacity: 0, y: -50 },
+                animate: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.8, delay: 0.3, ease: "easeOut" },
+                },
+              }}
+            >
+              {deemedUniversity}
+            </motion.h1>
             <motion.div
               className="mt-10"
               variants={{
@@ -515,8 +537,7 @@ const Homepage = () => {
                   Call for Papers
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Submit your innovative research and contribute to the
-                  advancement of information and communication technology.
+                We invite researchers, scholars, and practitioners to submit their original and unpublished work to MHLRP 2025. Explore opportunities to share your innovative ideas and contribute to the advancement of Peripheralized Community.
                 </p>
                 <Link
                   to={callForPapersLink}
@@ -528,6 +549,8 @@ const Homepage = () => {
             </div>
           </section>
         )}
+
+        <SupportersSection />
 
         <KnowledgePartnersSection />
 

@@ -1,18 +1,19 @@
+// src/pages/Venue.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaBuilding, FaHotel, FaPlane, FaTrain, FaCar } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaBuilding, FaHotel, FaPlane, FaTrain, FaCar, FaInfoCircle } from 'react-icons/fa'; // Added FaInfoCircle
 
-import venuPic from '../assets/NERIST-gate.png'; 
+import venuPic from '../assets/NERIST-gate.png';
 
 // Replace with your Google Maps embed URL (see instructions below)
-  const venueGoogleMapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.84513236048!2d93.74029521038959!3d27.129687450635668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aa9da1dd1bf1%3A0x3338f788c38d9e9e!2sNorth%20Eastern%20Regional%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1745120134336!5m2!1sen!2sin" ;
+const venueGoogleMapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.04698889417!2d93.99967677519159!3d26.790906871038557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x373b18562d98418f%3A0xc3f5f3e4b77f98c1!2sNERIST%20Nirjuli!5e0!3m2!1sen!2sin!4v1716335198466!5m2!1sen!2sin";
 
 // Replace with your actual venue details and Google Maps embed URL
 const venueDetails = {
     name: 'NERIST, Nirjuli',
     address: 'NIRJULI, 791109, ARUNACHAL PRADESH, India',
     description: 'A premier event space equipped with state-of-the-art facilities, offering a comfortable and conducive environment for MHLRP 2025.',
-    highlights: ['Spacious conference halls', 'Modern audio-visual equipment', 'Free Wi-Fi', 'On-site catering'],
+    highlights: ['Spacious conference halls', 'Modern audio-visual equipment', 'Free Wi-Fi'],
     googleMapsEmbedUrl: venueGoogleMapLink,
     venueImage: venuPic, // Replace with an actual image of the venue
 };
@@ -110,8 +111,45 @@ const Venue = () => {
                     </div>
                 </motion.div>
 
+                {/* How to Reach NERIST Section */}
+                <motion.div className="bg-white rounded-xl shadow-md p-8 mb-12 border-l-4 border-emerald-400" variants={cardVariants}>
+                    <h2 className="text-2xl font-semibold text-emerald-700 mb-4 flex items-center">
+                        <FaCar className="mr-2 text-emerald-500" /> How to Reach NERIST
+                    </h2>
+                    <div className="text-gray-700 leading-relaxed space-y-3">
+                        <p>NERIST is well-connected by air, road, and rail.</p>
+                        <div className="flex items-start"> {/* Use a div for the flex container */}
+                            <FaPlane className="mr-2 mt-1 text-blue-500 flex-shrink-0" size={20} />
+                            <span>
+                                The nearest airport is **Hollongi (HGI), Itanagar**, with
+                                flights from Guwahati, Kolkata, and Delhi.
+                            </span>
+                        </div>
+                        <div className="flex items-start"> {/* Another div for train info */}
+                            <FaTrain className="mr-2 mt-1 text-red-500 flex-shrink-0" size={20} />
+                            <span>
+                                Trains run daily from Guwahati to **Naharlagun**.
+                            </span>
+                        </div>
+                        {/* THIS IS THE FIXED LINE */}
+                        <div className="flex items-start"> {/* Use a div as the main flex container */}
+                            <FaInfoCircle className="mr-2 mt-1 text-purple-500 flex-shrink-0" size={20} />
+                            <span className="flex-grow"> {/* Span to contain the text and allow it to wrap properly */}
+                                Domestic visitors need an **Inner Line Permit** (
+                                <a href="https://eilp.arunachal.gov.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                                    https://eilp.arunachal.gov.in
+                                </a>), while international visitors must obtain a **Protected Area Permit** via Arunachal Tourism (
+                                <a href="https://www.arunachaltourism.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                                    https://www.arunachaltourism.com
+                                </a>).
+                            </span>
+                        </div>
+                    </div>
+                </motion.div>
+
+
                 {/* Optional Accommodation Section */}
-                {accommodations && accommodations.length > 0 && (
+                {/* {accommodations && accommodations.length > 0 && (
                     <motion.div className="mb-12" variants={cardVariants}>
                         <h2 className="text-2xl font-semibold text-orange-700 mb-6 flex items-center">
                             <FaHotel className="mr-2 text-amber-500" /> Recommended Accommodation
@@ -138,10 +176,26 @@ const Venue = () => {
                             ))}
                         </div>
                     </motion.div>
-                )}
+                )} */}
 
-                {/* Optional Travel Information Section */}
-                {/* Add a similar card structure here for travel information (by air, rail, road), using icons like FaPlane, FaTrain, FaCar */}
+                {/* Accommodation Options Section */}
+                <motion.div className="bg-white rounded-xl shadow-md p-8 mb-12 border-l-4 border-pink-400" variants={cardVariants}>
+                    <h2 className="text-2xl font-semibold text-pink-700 mb-4 flex items-center">
+                        <FaHotel className="mr-2 text-pink-500" /> Accommodation Options
+                    </h2>
+                    <div className="text-gray-700 leading-relaxed space-y-3">
+                        <p>
+                            **Limited accommodation options** on payment are available **on campus**. These may be provided to participants on a **first-come-first-served basis** based on availability.
+                        </p>
+                        <p>
+                            Additionally, standard, budget, and luxury hotels are available at **Nirjuli, Naharlagun, and Itanagar**. These can be booked through popular hotel booking sites (e.g., MakeMyTrip, Goibibo, Booking.com, Agoda).
+                        </p>
+                        <p className="text-sm text-gray-600 italic mt-4">
+                            <FaInfoCircle className="inline mr-1 text-yellow-500" /> It's advisable to book your accommodation in advance due to limited availability, especially during peak seasons.
+                        </p>
+                    </div>
+                </motion.div>
+
             </div>
         </motion.div>
     );
