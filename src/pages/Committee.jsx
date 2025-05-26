@@ -34,6 +34,7 @@ import dharmeshwariRgu from "../assets/committee/Dharmeswari-rgu.png";
 import kakaliRgu from "../assets/committee/kakali-rgu.png";
 import pauloPortugal from "../assets/committee/paulo-portugal.webp";
 import tokoSamaNerist from "../assets/committee/toko-sama-nerist.png";
+import demoImage from "../assets/committee/demo-speaker.png"; // Placeholder for Head of HSS
 
 // Conference-specific constants (consistent with About.jsx)
 const conferenceName =
@@ -189,10 +190,9 @@ const committeeMembers = [
     role: "Conference Chair",
     members: [
       {
-        name: "Prof. Raju Barthakur",
-        affiliation: "Head, Department of HSS",
+        name: "Head, Department of HSS",
         designation: "NERIST",
-        image: rajuBorthakurNerist,
+        image: demoImage,
       },
       // Add more organizing committee members
     ],
