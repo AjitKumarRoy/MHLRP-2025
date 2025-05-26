@@ -133,7 +133,7 @@ const Venue = () => {
                         </div>
                         {/* THIS IS THE FIXED LINE */}
                         <div className="flex items-start"> {/* Use a div as the main flex container */}
-                            <FaInfoCircle className="mr-2 mt-1 text-purple-500 flex-shrink-0" size={20} />
+                            <FaInfoCircle className="mr-2 mt-1 text-purple-500 flex-shrink-1" size={20} />
                             <span className="flex-grow"> {/* Span to contain the text and allow it to wrap properly */}
                                 Domestic visitors need an **Inner Line Permit** (
                                 <a href="https://eilp.arunachal.gov.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
