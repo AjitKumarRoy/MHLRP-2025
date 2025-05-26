@@ -231,14 +231,19 @@ const CallForPapers = () => {
               *Joint paper presenters have to register
               separately.
             </p>
-            <motion.button
+            <p className="text-gray-600 leading-relaxed">
+              <i>
+              *The conference aims to encourage participants from PVTG, Dalit, LGBTQIAP+ community, Women etc
+              </i>
+            </p>
+            {/* <motion.button
               href="/guidelines" // Replace with a link to detailed guidelines
               className="inline-flex items-center bg-indigo-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-indigo-600 transition duration-300 mt-4"
               variants={buttonVariants}
               whileHover="hover"
             >
               Read Detailed Guidelines
-            </motion.button>
+            </motion.button> */}
           </div>
         </motion.div>
 
@@ -257,14 +262,14 @@ const CallForPapers = () => {
               <li>Referencing style: APA 7th edition</li>
               <li>Declaration of conflict of interest</li>
             </ol>
-            <motion.button
+            {/* <motion.button
               href="/guidelines" // Replace with a link to detailed guidelines
               className="inline-flex items-center bg-indigo-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-indigo-600 transition duration-300 mt-4"
               variants={buttonVariants}
               whileHover="hover"
             >
               Read Detailed Guidelines
-            </motion.button>
+            </motion.button> */}
           </div>
         </motion.div>
 
@@ -289,14 +294,14 @@ const CallForPapers = () => {
               </li>
               {/* Add more format details */}
             </ul>
-            <motion.button
+            {/* <motion.button
               href="/templates" // Replace with a link to download templates
               className="inline-flex items-center bg-blue-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-600 transition duration-300 mt-4"
               variants={buttonVariants}
               whileHover="hover"
             >
               Download Paper Templates
-            </motion.button>
+            </motion.button> */}
           </div>
         </motion.div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   const primaryGradient = 'bg-gradient-to-r from-teal-800 via-blue-900 to-indigo-800';
@@ -111,14 +111,23 @@ const Footer = () => {
         <div>
           <h3 className={`text-xl font-semibold ${headingColor} mb-4`}>Follow Us</h3>
           <div className="flex space-x-4">
-            <Link to="[Your Facebook Link]" className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+            <Link to="https://nerist.ac.in/humanities-and-social-sciences-department/" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+              HSS, NERIST
+            </Link>
+            <Link to="https://www.facebook.com/neristofficial" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
               <FaFacebook size={24} />
             </Link>
-            <Link to="[Your Twitter Link]" className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+            <Link to="https://x.com/neristofficial" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
               <FaTwitter size={24} />
             </Link>
-            <Link to="[Your LinkedIn Link]" className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+            <Link to="https://www.linkedin.com/school/north-eastern-regional-institute-of-science-and-technology-nerist-/" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
               <FaLinkedin size={24} />
+            </Link>
+            <Link to="https://www.youtube.com/@nerist_official" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+              <FaYoutube size={24} />
+            </Link>
+            <Link to="https://www.instagram.com/nerist_nirjuli/" target='_blank' className={`text-gray-400 hover:text-teal-300 hover:underline`}>
+              <FaInstagram size={24} />
             </Link>
             {/* Add more social media links as needed */}
           </div>

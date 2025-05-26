@@ -8,8 +8,8 @@ import { FaLinkedin, FaTwitter, FaGlobe, FaMicrophone } from 'react-icons/fa'; /
 // If your images are in `src/assets/` and `src/assets/committee/`,
 // these relative paths should be correct assuming Speakers.js is in `src/components/` or similar.
 // ----------------------------------------------------------------------
-import speaker1 from '../assets/committee/girishwar-mishra-du.jfif';
-import speaker2 from '../assets/committee/girishwar-mishra-du.jfif';
+import speaker1 from '../assets/committee/demo-speaker.png';
+import speaker2 from '../assets/committee/demo-speaker.png';
 import girishwarMishraDu from '../assets/committee/girishwar-mishra-du.jfif';
 import anandPrakashDu from '../assets/committee/anand-prakash-du.jfif';
 import ritaRaniTalukdar from '../assets/committee/rita-rani-talukdar.jpg';
@@ -27,22 +27,31 @@ const speakersData = [
         type: 'Keynote Speakers',
         speakers: [
             {
-                name: 'Dr. Eleanor Vance',
-                designation: 'Chief Innovation Officer',
-                affiliation: 'Global Tech Innovations Inc.',
-                bio: 'A visionary leader in AI and sustainable technology, Dr. Vance has revolutionized the industry with her groundbreaking research.',
+                name: 'To Be',
+                designation: 'Announced',
+                affiliation: 'Soon',
+                bio: '',
                 image: speaker1, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/eleanorvance',
-                twitter: 'https://twitter.com/eleanorvance',
+                linkedin: '',
+                twitter: '',
             },
-            {
-                name: 'Professor Kenji Tanaka',
-                designation: 'Professor of Robotics',
-                affiliation: 'Tokyo Institute of Advanced Robotics',
-                bio: 'A world-renowned expert in human-robot interaction and advanced automation, Professor Tanaka\'s work has been pivotal in the field.',
-                image: speaker2, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/kenjitanaka',
-            },
+            // {
+            //     name: 'Dr. Eleanor Vance',
+            //     designation: 'Chief Innovation Officer',
+            //     affiliation: 'Global Tech Innovations Inc.',
+            //     bio: 'A visionary leader in AI and sustainable technology, Dr. Vance has revolutionized the industry with her groundbreaking research.',
+            //     image: speaker1, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/eleanorvance',
+            //     twitter: 'https://twitter.com/eleanorvance',
+            // },
+            // {
+            //     name: 'Professor Kenji Tanaka',
+            //     designation: 'Professor of Robotics',
+            //     affiliation: 'Tokyo Institute of Advanced Robotics',
+            //     bio: 'A world-renowned expert in human-robot interaction and advanced automation, Professor Tanaka\'s work has been pivotal in the field.',
+            //     image: speaker2, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/kenjitanaka',
+            // },
             // Add more keynote speakers
         ],
     },
@@ -50,78 +59,87 @@ const speakersData = [
         type: 'Invited Speakers',
         speakers: [
             {
-                name: 'Prof. Girishwar Misra',
-                designation: 'Vice Chancellor',
-                affiliation: 'Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha, Maharashtra',
-                bio: 'Educator, Psychologist, Social Scientist, Writer, Editor.',
-                image: girishwarMishraDu, // Using imported image
-                twitter: 'https://twitter.com/aishakhan_data',
-                website: 'https://datawiseanalytics.com',
+                name: 'To Be',
+                designation: 'Announced',
+                affiliation: 'Soon',
+                bio: '',
+                image: speaker1, // Using imported image
+                linkedin: '',
+                twitter: '',
             },
-            {
-                name: 'Dr. Anand Prakash',
-                designation: 'Prof & Head, Department of Psychology',
-                affiliation: 'University of Delhi',
-                bio: 'hello heloo heloo',
-                image: anandPrakashDu, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Prof. Rita Rani Talukdar',
-                designation: 'Department of Psychology',
-                affiliation: 'Gauhati University, Guwahati, Assam',
-                bio: 'hello heloo heloo',
-                image: ritaRaniTalukdar, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Dr. Dharmeshwari Lourembam',
-                designation: 'Assistant Professor',
-                affiliation: 'Department of Psychology, Rajiv Gandhi University, Rono Hills, Doimukh, Arunachal Pradesh',
-                bio: 'hello heloo heloo',
-                image: dharmeshwariRgu, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Dr. Trude Sundberg',
-                designation: 'Director',
-                affiliation: 'Q-Step Centre',
-                bio: 'Senior Lecturer, University of Kent, United Kingdom',
-                image: trudeSunbergUk, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Prof. Indraneel Bhowmik',
-                designation: 'Department of Economics',
-                affiliation: 'Tripura University',
-                bio: 'hello heloo heloo',
-                image: indraneelBhowmikTu, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Prof. S.P.K. Jena',
-                designation: 'Senior Professor in Dept. of Applied Psychology',
-                affiliation: 'University of Delhi',
-                bio: 'hello heloo heloo',
-                image: spkJenaDu, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Prof. K.B.L. Srivastava',
-                designation: 'Professor (OB/HRD), Dept. of HSS',
-                affiliation: 'IIT Kharagpur',
-                bio: 'hello heloo heloo',
-                image: kblKgp, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
-            {
-                name: 'Sawang Wangchha',
-                designation: 'Founder',
-                affiliation: 'Arunachal Pradesh Queer Station',
-                bio: 'It is the first and only Queer Community Collective of Arunachal Pradesh',
-                image: queerFounder, // Using imported image
-                linkedin: 'https://www.linkedin.com/in/bencartersecurity',
-            },
+            // {
+            //     name: 'Prof. Girishwar Misra',
+            //     designation: 'Vice Chancellor',
+            //     affiliation: 'Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya, Wardha, Maharashtra',
+            //     bio: 'Educator, Psychologist, Social Scientist, Writer, Editor.',
+            //     image: girishwarMishraDu, // Using imported image
+            //     twitter: 'https://twitter.com/aishakhan_data',
+            //     website: 'https://datawiseanalytics.com',
+            // },
+            // {
+            //     name: 'Dr. Anand Prakash',
+            //     designation: 'Prof & Head, Department of Psychology',
+            //     affiliation: 'University of Delhi',
+            //     bio: 'hello heloo heloo',
+            //     image: anandPrakashDu, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Prof. Rita Rani Talukdar',
+            //     designation: 'Department of Psychology',
+            //     affiliation: 'Gauhati University, Guwahati, Assam',
+            //     bio: 'hello heloo heloo',
+            //     image: ritaRaniTalukdar, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Dr. Dharmeshwari Lourembam',
+            //     designation: 'Assistant Professor',
+            //     affiliation: 'Department of Psychology, Rajiv Gandhi University, Rono Hills, Doimukh, Arunachal Pradesh',
+            //     bio: 'hello heloo heloo',
+            //     image: dharmeshwariRgu, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Dr. Trude Sundberg',
+            //     designation: 'Director',
+            //     affiliation: 'Q-Step Centre',
+            //     bio: 'Senior Lecturer, University of Kent, United Kingdom',
+            //     image: trudeSunbergUk, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Prof. Indraneel Bhowmik',
+            //     designation: 'Department of Economics',
+            //     affiliation: 'Tripura University',
+            //     bio: 'hello heloo heloo',
+            //     image: indraneelBhowmikTu, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Prof. S.P.K. Jena',
+            //     designation: 'Senior Professor in Dept. of Applied Psychology',
+            //     affiliation: 'University of Delhi',
+            //     bio: 'hello heloo heloo',
+            //     image: spkJenaDu, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Prof. K.B.L. Srivastava',
+            //     designation: 'Professor (OB/HRD), Dept. of HSS',
+            //     affiliation: 'IIT Kharagpur',
+            //     bio: 'hello heloo heloo',
+            //     image: kblKgp, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
+            // {
+            //     name: 'Sawang Wangchha',
+            //     designation: 'Founder',
+            //     affiliation: 'Arunachal Pradesh Queer Station',
+            //     bio: 'It is the first and only Queer Community Collective of Arunachal Pradesh',
+            //     image: queerFounder, // Using imported image
+            //     linkedin: 'https://www.linkedin.com/in/bencartersecurity',
+            // },
 
             // Add more invited speakers
         ],

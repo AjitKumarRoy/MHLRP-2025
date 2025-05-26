@@ -367,12 +367,12 @@ const committeeMembers = [
   {
     role: "Editorial Committee",
     members: [
-      {
-        name: "Prof. J. Paulo Davim",
-        affiliation: "Series Editor",
-        designation: "University of Aveiro, Portugal",
-        image: pauloPortugal,
-      },
+      // {
+      //   name: "Prof. J. Paulo Davim",
+      //   affiliation: "Series Editor",
+      //   designation: "University of Aveiro, Portugal",
+      //   image: pauloPortugal,
+      // },
       {
         name: "Prof. Girishwar Misra",
         affiliation: "Professor, Department of Psychology",

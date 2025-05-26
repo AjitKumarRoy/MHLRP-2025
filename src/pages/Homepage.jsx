@@ -555,7 +555,7 @@ const Homepage = () => {
         <KnowledgePartnersSection />
 
         {/* Sponsors & Partners Section */}
-        {sponsors.length > 0 && (
+        {/* {sponsors.length > 0 && (
           <section className="py-16 bg-gray-100">
             <div className="container mx-auto px-8">
               <motion.h2
@@ -582,7 +582,7 @@ const Homepage = () => {
               </div>
             </div>
           </section>
-        )}
+        )} */}
       </motion.div>
   );
 };

@@ -67,12 +67,15 @@ const PaymentDetails = () => {
                             <FaUniversity className="mr-3 text-indigo-500" /> Bank Transfer Details
                         </h2>
                         <div className="space-y-4 text-gray-700">
-                            <p><strong>Account Name:</strong> NERIST Conference Account</p>
-                            <p><strong>Bank Name:</strong> State Bank of India</p>
-                            <p><strong>Account Number:</strong> 1234567890123</p> {/* Replace with your actual account number */}
-                            <p><strong>IFSC Code:</strong> SBIN0007421</p> {/* Replace with your actual IFSC code */}
-                            <p><strong>SWIFT Code:</strong> SBININBBXXX</p> {/* Replace with your actual SWIFT code for international */}
-                            <p><strong>Branch:</strong> NERIST Branch, Nirjuli, Arunachal Pradesh</p>
+                            {/* <p><strong>Account Name:</strong> NERIST Conference Account</p> */}
+                            {/* <p><strong>Bank Name:</strong> State Bank of India</p> */}
+                            <p><strong>Customer ID:</strong> 00000092113672552</p>
+                            <p><strong>Account Number:</strong> 00000044071146257</p> {/* Replace with your actual account number */}
+                            <p><strong>IFSC Code:</strong> SBIN0018744</p> {/* Replace with your actual IFSC code */}
+                            {/* <p><strong>SWIFT Code:</strong> SBININBBXXX</p>  */}
+                            {/* Replace with your actual SWIFT code for international */}
+                            <p><strong>Home Branch:</strong> NERIST, Nirjuli</p>
+                            <p><strong>Branch Address:</strong> NERIST, Nirjuli (18744) NE Regional Institute of Science and Technology, NERIST Campus, Naharlagun, Arunachal 791110</p>
                             <p className="text-sm text-gray-600 mt-4"><FaExclamationCircle className="inline mr-1 text-orange-500" /> Please include your **Full Name** and "**MHLRP 2025 Registration**" in the transaction remarks/notes.</p>
                         </div>
                     </motion.div>

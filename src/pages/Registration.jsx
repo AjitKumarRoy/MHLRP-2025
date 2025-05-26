@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 // Sample registration data (replace with your actual data)
 const registrationTiers = [
     {
-        category: 'Students',
+        category: 'PhD Scholars / Delegates',
         fee: 'INR 1000 / USD 20',
         deadline: '25 October, 2025',
         benefits: [
@@ -21,7 +21,7 @@ const registrationTiers = [
         buttonColor: 'bg-blue-500 hover:bg-blue-600',
     },
     {
-        category: 'Academics',
+        category: 'Faculty Members / Independent Researchers / Corporate Members',
         fee: 'INR 1500 / USD 25',
         deadline: '25 October, 2025',
         benefits: [
@@ -35,22 +35,22 @@ const registrationTiers = [
         color: 'bg-green-100 text-green-700',
         buttonColor: 'bg-green-500 hover:bg-green-600',
     },
-    {
-        category: 'Industry Delegates',
-        fee: 'INR 2,500 / USD 35',
-        deadline: '25 October, 2025',
-        benefits: [
-            'Early Bird Price - INR 2000 / USD 30',
-            'Conference materials',
-            'Lunch and coffee breaks',
-            'Certificate of participation',
-            'Networking opportunities',
-            'Industry-focused sessions',
-        ],
-        icon: FaBuilding,
-        color: 'bg-indigo-100 text-indigo-700',
-        buttonColor: 'bg-indigo-500 hover:bg-indigo-600',
-    },
+    // {
+    //     category: 'Industry Delegates',
+    //     fee: 'INR 2,500 / USD 35',
+    //     deadline: '25 October, 2025',
+    //     benefits: [
+    //         'Early Bird Price - INR 2000 / USD 30',
+    //         'Conference materials',
+    //         'Lunch and coffee breaks',
+    //         'Certificate of participation',
+    //         'Networking opportunities',
+    //         'Industry-focused sessions',
+    //     ],
+    //     icon: FaBuilding,
+    //     color: 'bg-indigo-100 text-indigo-700',
+    //     buttonColor: 'bg-indigo-500 hover:bg-indigo-600',
+    // },
 ];
 
 const containerVariants = {
@@ -94,7 +94,8 @@ const Registration = () => {
                 </motion.div>
 
                 {/* Pricing Tiers Section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+                    {/* grid --> 1, 2, 3  (original) */}
                     {registrationTiers.map((tier, index) => (
                         <motion.div
                             key={index}

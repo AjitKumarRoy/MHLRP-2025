@@ -8,12 +8,12 @@ import Image2 from '../assets/supporters/tribal-affairs.png'
 const knowledgePartners = [
     {
         logo: Image, // Placeholder logo
-        name: 'Ministry Of Tribal Affairs',
+        name: 'Department of Social Justice & Empowerment & Tribal Affairs Government of Arunachal Pradesh',
         description: '',
     },
     {
         logo: Image2,
-        name: 'Department of Social Justice & Empowerment & Tribal Affairs Government of Arunachal Pradesh',
+        name: 'Ministry Of Tribal Affairs ',
         description: '',
     },
 ];

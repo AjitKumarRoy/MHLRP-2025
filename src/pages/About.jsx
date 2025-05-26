@@ -422,7 +422,7 @@ const eventData = {
                 </motion.div> */}
 
         {/* Why Attend? Card */}
-        <motion.div
+        {/* <motion.div
           className="bg-white rounded-xl shadow-md p-8"
           variants={cardVariants}
         >
@@ -436,7 +436,7 @@ const eventData = {
             <li>Participate in interactive workshops and tutorials.</li>
             <li>Expand your knowledge and advance your career.</li>
           </ul>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );
