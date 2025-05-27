@@ -7,9 +7,9 @@ import emailjs from '@emailjs/browser'; // Import EmailJS
 // --- EmailJS Configuration (Add these lines) ---
 // IMPORTANT: Replace with your actual IDs.
 // For production, you should use environment variables (see Step 4).
-const EMAILJS_SERVICE_ID = import.meta.env.EMAILJS_SERVICE_ID;
-const EMAILJS_TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
-const EMAILJS_PUBLIC_KEY = import.meta.env.EMAILJS_PUBLIC_KEY;
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 // --- End EmailJS Configuration ---
 
 // Replace with your actual contact information and Google Maps embed URL

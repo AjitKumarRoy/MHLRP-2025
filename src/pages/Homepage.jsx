@@ -302,7 +302,7 @@ const Homepage = () => {
                 },
               }}
             >
-              {deemedUniversity}
+              ({deemedUniversity})
             </motion.h1>
             <motion.div
               className="mt-10"

@@ -69,7 +69,7 @@ const PaymentDetails = () => {
                         <div className="space-y-4 text-gray-700">
                             {/* <p><strong>Account Name:</strong> NERIST Conference Account</p> */}
                             {/* <p><strong>Bank Name:</strong> State Bank of India</p> */}
-                            <p><strong>Customer ID:</strong> 00000092113672552</p>
+                            {/* <p><strong>Customer ID:</strong> 00000092113672552</p> */}
                             <p><strong>Account Number:</strong> 00000044071146257</p> {/* Replace with your actual account number */}
                             <p><strong>IFSC Code:</strong> SBIN0018744</p> {/* Replace with your actual IFSC code */}
                             {/* <p><strong>SWIFT Code:</strong> SBININBBXXX</p>  */}

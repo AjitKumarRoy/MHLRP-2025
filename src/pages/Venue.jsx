@@ -121,24 +121,24 @@ const Venue = () => {
                         <div className="flex items-start"> {/* Use a div for the flex container */}
                             <FaPlane className="mr-2 mt-1 text-blue-500 flex-shrink-0" size={20} />
                             <span>
-                                The nearest airport is **Hollongi (HGI), Itanagar**, with
+                                The nearest airport is Hollongi (HGI), Itanagar, with
                                 flights from Guwahati, Kolkata, and Delhi.
                             </span>
                         </div>
                         <div className="flex items-start"> {/* Another div for train info */}
                             <FaTrain className="mr-2 mt-1 text-red-500 flex-shrink-0" size={20} />
                             <span>
-                                Trains run daily from Guwahati to **Naharlagun**.
+                                Trains run daily from Guwahati to Naharlagun.
                             </span>
                         </div>
                         {/* THIS IS THE FIXED LINE */}
                         <div className="flex items-start"> {/* Use a div as the main flex container */}
                             <FaInfoCircle className="mr-2 mt-1 text-purple-500 flex-shrink-1" size={20} />
                             <span className="flex-grow"> {/* Span to contain the text and allow it to wrap properly */}
-                                Domestic visitors need an **Inner Line Permit** (
+                                Domestic visitors need an <strong>Inner Line Permit</strong> (
                                 <a href="https://eilp.arunachal.gov.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                     https://eilp.arunachal.gov.in
-                                </a>), while international visitors must obtain a **Protected Area Permit** via Arunachal Tourism (
+                                </a>), while international visitors must obtain a <strong>Protected Area Permit</strong> via Arunachal Tourism (
                                 <a href="https://www.arunachaltourism.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                     https://www.arunachaltourism.com
                                 </a>).
@@ -185,10 +185,10 @@ const Venue = () => {
                     </h2>
                     <div className="text-gray-700 leading-relaxed space-y-3">
                         <p>
-                            **Limited accommodation options** on payment are available **on campus**. These may be provided to participants on a **first-come-first-served basis** based on availability.
+                            Limited accommodation options on payment are available on campus. These may be provided to participants on a first-come-first-served basis based on availability.
                         </p>
                         <p>
-                            Additionally, standard, budget, and luxury hotels are available at **Nirjuli, Naharlagun, and Itanagar**. These can be booked through popular hotel booking sites (e.g., MakeMyTrip, Goibibo, Booking.com, Agoda).
+                            Additionally, standard, budget, and luxury hotels are available at Nirjuli, Naharlagun, and Itanagar. These can be booked through popular hotel booking sites (e.g., MakeMyTrip, Goibibo, Booking.com, Agoda).
                         </p>
                         <p className="text-sm text-gray-600 italic mt-4">
                             <FaInfoCircle className="inline mr-1 text-yellow-500" /> It's advisable to book your accommodation in advance due to limited availability, especially during peak seasons.

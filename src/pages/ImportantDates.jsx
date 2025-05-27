@@ -54,7 +54,7 @@ const eventData = {
     eventSchedule: [
       {
         "@type": "Schedule",
-        startDate: "2025-05-25",
+        startDate: "2025-05-30",
         name: "Call for Papers Opens",
         description: "The submission portal for research papers opens.",
       },
@@ -99,7 +99,7 @@ const eventData = {
 // Sample important dates data (replace with your actual dates)
 const importantDates = [
   {
-    date: "25th May, 2025",
+    date: "30th May, 2025",
     event: "Call for Papers Opens",
     status: "past", // 'past', 'upcoming', 'critical'
     description: "The submission portal for research papers opens.",
@@ -266,7 +266,8 @@ const ImportantDates = () => {
             </motion.div>
           ))}
         </div>
-        <ScrollingNotification text="Selected papers will be published in the form of an edited book by Taylor & Francis, shortly after the conclusion of the conference." />
+        <ScrollingNotification text=" Publication of the selected papers in a journal or edited
+ volume format by reputed publishers." />
       </div>
     </motion.div>
   );
