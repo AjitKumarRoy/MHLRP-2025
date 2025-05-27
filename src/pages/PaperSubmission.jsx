@@ -182,20 +182,20 @@ const PaperSubmission = () => {
             <ol className="list-decimal list-inside text-gray-600 leading-relaxed space-y-4">
               <li>
                 <strong>Prepare Your Paper :</strong> Ensure your paper adheres
-                to the MHLRP 2025 guidelines and uses the official template.
-                <motion.a
+                to the MHLRP 2025 guidelines.
+                {/* <motion.a
                   href="/templates" // Replace with the link to your templates page
                   className="inline-block text-blue-500 hover:underline ml-2"
                   variants={buttonVariants}
                   whileHover="hover"
                 >
                   Download Templates
-                </motion.a>
+                </motion.a> */}
               </li>
               <li>
                 <strong>Create an Account :</strong> If you are a new user,
                 create an account on the submission portal.
-                <motion.a
+                {/* <motion.a
                   href="[YOUR_SUBMISSION_PORTAL_LINK]/register" // Replace with the registration link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -204,12 +204,12 @@ const PaperSubmission = () => {
                   whileHover="hover"
                 >
                   Register Here
-                </motion.a>
+                </motion.a> */}
               </li>
               <li>
                 <strong>Login to the Portal :</strong> Use your credentials to
                 log in to the paper submission system.
-                <motion.a
+                {/* <motion.a
                   href="[YOUR_SUBMISSION_PORTAL_LINK]/login" // Replace with the login link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -218,7 +218,7 @@ const PaperSubmission = () => {
                   whileHover="hover"
                 >
                   Login
-                </motion.a>
+                </motion.a> */}
               </li>
               <li>
                 <strong>Submit Your Paper :</strong> Follow the instructions on
