@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaQuestionCircle, FaHeadset, FaCog } from 'react-icons/fa';
 import emailjs from '@emailjs/browser'; // Import EmailJS
 
-// --- EmailJS Configuration (Add these lines) ---
+// --- EmailJS Configuration (Add these lines) --
 // IMPORTANT: Replace with your actual IDs.
 // For production, you should use environment variables (see Step 4).
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
