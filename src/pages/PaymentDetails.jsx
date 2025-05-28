@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from 'react-router-dom'; // Import hooks for
 
 // IMPORTANT: Import your QR code image here
 // Place your QR code image in the `src/assets/` folder (or adjust the path accordingly)
-import UpiQrCode from '../assets/upi-qr-code.jpeg'; // Example: Assuming your QR code is in src/assets/upi-qr-code.png
+import UpiQrCode from '../assets/upi-qr-code.png'; // Example: Assuming your QR code is in src/assets/upi-qr-code.png
 // If your QR code is in public folder, you can use '/upi-qr-code.png' directly in img src without import
 
 const containerVariants = {
@@ -76,7 +76,7 @@ const PaymentDetails = () => {
                             {/* Replace with your actual SWIFT code for international */}
                             <p><strong>Home Branch:</strong> NERIST, Nirjuli</p>
                             <p><strong>Branch Address:</strong> NERIST, Nirjuli (18744) NE Regional Institute of Science and Technology, NERIST Campus, Naharlagun, Arunachal 791110</p>
-                            <p className="text-sm text-gray-600 mt-4"><FaExclamationCircle className="inline mr-1 text-orange-500" /> Please include your **Full Name** and "**MHLRP 2025 Registration**" in the transaction remarks/notes.</p>
+                            <p className="text-sm text-gray-600 mt-4"><FaExclamationCircle className="inline mr-1 text-orange-500" /> Please include your **Full Name** and **MHLRP 2025 Registration** in the transaction remarks/notes.</p>
                         </div>
                     </motion.div>
 
