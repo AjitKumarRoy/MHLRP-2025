@@ -1,59 +1,57 @@
-# NERIST Conf. 2025 Website
+# MHLRP 2025 Conference Website
 
-🚀 A modern and responsive website built with React and Tailwind CSS for the NERIST Conf. 2025. Explore the future of AI and Digital Transformation with a premium user experience.
+[![React](https://img.shields.io/badge/React-19.1.0-61DAFB?logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5.4.8-646CFF?logo=vite)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.14-38B2AC?logo=tailwind-css)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![Deployed](https://img.shields.io/badge/Deployed-Hostinger-FF6C2C)](https://mhlrp2025.com)
 
-## ✨ Key Features:
+Welcome to the official repository for the **MHLRP 2025** (International Conference on Mental Health and Life Resilience Psychology) website, hosted at [NERIST, Nirjuli, Arunachal Pradesh, India](https://www.nerist.ac.in) on **November 6-7, 2025**. This modern, SEO-optimized, and statically pre-rendered website is built with **React 19.1.0**, **Vite**, **Tailwind CSS**, and **Mantine UI**, featuring a contact form powered by **EmailJS** and animations via **Framer Motion**.
 
-* **Sleek and Modern Design:** A visually appealing interface with gradient colors and a contemporary feel.
-* **Responsive Layout:** Seamlessly adapts to all screen sizes, from desktops to mobile devices.
-* **Smooth Navigation:** Utilizes React Router for efficient client-side routing.
-* **Active Link Highlighting:** Clearly indicates the currently viewed page in the navigation.
-* **Animated Mobile Menu:** A smooth slide-in/out hamburger menu with automatic closing on link click or outside interaction.
-* **Scroll-Aware Navbar:** The navigation bar smoothly hides on downward scroll and reappears on upward scroll for an enhanced browsing experience.
-* **Organized Structure:** Built with reusable React components for maintainability and scalability.
-* **Tailwind CSS:** Rapid styling and customization with a utility-first CSS framework.
-* **Framer Motion:** Subtle and modern animations to enhance user engagement.
+🌐 **Live Site**: [mhlrp2025.com](https://mhlrp2025.com)
 
-## 🛠️ Technologies Used:
+![MHLRP 2025 Homepage Screenshot](screenshots/homepage.png)
 
-* React
-* React Router
-* Tailwind CSS
-* Framer Motion
-* React Icons
+## 📑 Table of Contents
+- [About MHLRP 2025](#about-mhlrp-2025)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+- [Building and Deploying](#building-and-deploying)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 📂 Project Structure:
-```bash
-src/
-├── components/     # Reusable UI components (Navbar, Footer, Layout)
-├── pages/        # Page-specific components (Homepage, About, Speakers, etc.)
-├── assets/       # Images, logos, and other static assets
-├── styles/       # Global CSS and any custom styles
-└── App.jsx       # Main application component
-└── main.jsx      # Entry point of the application
-└── ...
+## 🧠 About MHLRP 2025
 
-## ⚙️ Setup Instructions:
+The **MHLRP 2025** conference brings together researchers, academics, and professionals to explore advancements in mental health and life resilience psychology. Held at the North Eastern Regional Institute of Science and Technology (NERIST), Nirjuli, this event offers opportunities for paper presentations, networking, and collaboration.
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/AjitKumarRoy/nerist-conference.git
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd conference-website
-    ```
-3.  Install dependencies:
-    ```bash
-    npm install
-    ```
-4.  Start the development server:
-    ```bash
-    npm run dev
-    ```
-5.  Open your browser and visit `http://localhost:5173` (or the port specified in your terminal).
+This repository contains the source code for the conference website, designed to provide seamless navigation, SEO-friendly content, and a responsive user experience for attendees seeking information on registration, venue, contact details, and more.
 
-## 🤝 Contributions:
+## ✨ Features
 
-Contributions are welcome! Please feel free to submit pull requests with improvements, bug fixes, or new features.
+- **Responsive Design**: Mobile-first layout with Tailwind CSS and Mantine UI.
+- **SEO Optimized**: Pre-rendered pages with `react-helmet-async` for search engine visibility and social media previews (Open Graph, Twitter Cards).
+- **Manual SSG**: Static site generation using `prerender.js` for 12 routes (e.g., `/`, `/registration`, `/venue`, `/contact`).
+- **Interactive Contact Form**: Powered by EmailJS for direct inquiries to `mhlrp2025@gmail.com`.
+- **Smooth Animations**: Framer Motion for engaging transitions and hover effects.
+- **Google Maps Integration**: Embedded maps for NERIST venue location.
+- **Analytics**: Google tag (`G-YNVCP37WF4`) for tracking user engagement.
 
+## 🛠 Tech Stack
+
+| Technology           | Version  | Purpose                          |
+|----------------------|----------|----------------------------------|
+| React                | 19.1.0   | Frontend framework               |
+| Vite                 | 5.4.2    | Build tool and dev server        |
+| Tailwind CSS         | 3.4.1   | Styling framework                |
+| Mantine UI            | 7.13.2  | UI components                    |
+| Framer Motion        | 12.0.0   | Animations                       |
+| React Router         | 6.x     | Client-side routing              |
+| React Helmet Async   | 2.0.5   | SEO metadata management          |
+| EmailJS              | 3.12.1   | Contact form integration   |
+| Babel                | 7.25.7   | Transpilation for SSG            |
+| Node.js              | 20.x     | Runtime environment              |
+
+## 📂 Project Structure

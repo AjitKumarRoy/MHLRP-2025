@@ -125,6 +125,7 @@ const Contact = () => {
       {/* SEO Metadata */}
       <Helmet>
         <title>Contact | MHLRP 2025 International Conference</title>
+        <link rel="canonical" href="https://mhlrp2025.com/" />
         <meta
           name="description"
           content="Contact MHLRP 2025 at NERIST, Nirjuli, Arunachal Pradesh. Reach us via email at mhlrp2025@gmail.com or phone at +91 8837321508 for inquiries."

@@ -110,6 +110,7 @@ const Registration = () => {
       {/* SEO Metadata */}
       <Helmet>
         <title>Registration | MHLRP 2025 International Conference</title>
+        <link rel="canonical" href="https://mhlrp2025.com/" />
         <meta
           name="description"
           content="Register for MHLRP 2025, the International Conference on Mental Health and Life Resilience Psychology, November 6-7, 2025, at NERIST. Choose from PhD Scholars, Faculty, or Industry tiers."

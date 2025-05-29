@@ -115,6 +115,7 @@ const eventData = {
         <title>
           About {conferenceShortForm}: Mental Health Conference | NERIST
         </title>
+         <link rel="canonical" href="https://mhlrp2025.com/" />
         <meta name="description" content={aboutDescription} />
         <meta
           name="keywords"
