@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mhlrp2025.com/sitemap.xml
+Sitemap: https://mhlrp2025.com/sitemap.xml
