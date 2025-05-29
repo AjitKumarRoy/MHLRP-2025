@@ -46,7 +46,7 @@ const venue =
 const committeeDescription =
   "Meet the organizing team of MHLRP 2025, including chief patrons, conveners, and advisory committee members, dedicated to addressing mental health disparities at NERIST, November 6-7, 2025.";
 const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
-const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
 
 // Structured data for the Committee page
 const eventData = {

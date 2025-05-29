@@ -12,6 +12,7 @@ import {
 
 import KnowledgePartnersSection from "@/components/KnowledgePartners";
 import SupportersSection from "@/components/Supporters";
+import ScrollingNotification from "@/components/ScrollingNotification";
 
 // Import your actual hero images
 import heroImage1 from "../assets/background-image/nerist-background1.jpg";
@@ -25,16 +26,70 @@ import venueImage from "../assets/NERIST-gate.png";
 import sponsor1Logo from "../assets/knowledge-partner/bridge-logo.jpeg";
 import sponsor2Logo from "../assets/knowledge-partner/mariwala-logo.png";
 
-// Sample data (replace with your actual conference data)
-const conferenceName =
-  "Invisible Struggles: Mental Health and the Lived Realities of the Peripheralized";
+// Conference-specific constants (consistent with other pages)
+const conferenceName = "Invisible Struggles: Mental Health and the Lived Realities of the Peripheralized";
 const conferenceShortForm = "MHLRP 2025";
 const hosting = "Department of Humanities and Social Sciences";
 const venue = "North Eastern Regional Institute of Science and Technology";
 const venueShortForm = "NERIST";
-const deemedUniversity = "Deemed-to-be	University	under	the	Ministry	of	Education,	Government	of	India";
-const aboutText =
-  "Mental health remains a global concern, with marginalized and peripheralized communities experiencing significant disparities in access to mental health care, social support, and economic opportunities. These populations, often neglected in mainstream discussions, face unique psychological stressors arising from socio-political, economic, cultural and geographical exclusion. Addressing their mental health concerns requires a multidisciplinary approach involving psychology, public health, social work, policy-making, and community engagement. The conference aims to bring together international experts, researchers, practitioners, and policymakers to deliberate on effective strategies for promoting mental well-being among peripheralized populations.";
+const deemedUniversity = "Deemed-to-be University under the Ministry of Education, Government of India";
+const aboutText = "Mental health remains a global concern, with marginalized and peripheralized communities experiencing significant disparities in access to mental health care, social support, and economic opportunities. These populations, often neglected in mainstream discussions, face unique psychological stressors arising from socio-political, economic, cultural and geographical exclusion. Addressing their mental health concerns requires a multidisciplinary approach involving psychology, public health, social work, policy-making, and community engagement. The conference aims to bring together international experts, researchers, practitioners, and policymakers to deliberate on effective strategies for promoting mental well-being among peripheralized populations.";
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
+const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
+const homepageDescription = "Join MHLRP 2025 on November 6-7, 2025, at NERIST, Arunachal Pradesh, to explore mental health solutions for peripheralized communities. Submit abstracts by July 31, 2025.";
+
+// Structured data for the Homepage
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": `${conferenceShortForm} - Mental Health Conference`,
+  "description": homepageDescription,
+  "url": baseUrl,
+  "isPartOf": {
+    "@type": "Event",
+    "name": conferenceName,
+    "startDate": "2025-11-06",
+    "endDate": "2025-11-07",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": venue,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nirjuli",
+        "addressLocality": "Itanagar",
+        "addressRegion": "Arunachal Pradesh",
+        "postalCode": "791109",
+        "addressCountry": "IN"
+      }
+    },
+    "description": aboutText,
+    "organizer": {
+      "@type": "Organization",
+      "name": hosting,
+      "url": "https://nerist.ac.in/humanities-and-social-sciences-department/"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Abstract Submission",
+        "description": "Submit abstracts by July 31, 2025, for MHLRP 2025.",
+        "validThrough": "2025-07-31",
+        "url": `${baseUrl}/paper-submission`
+      },
+      {
+        "@type": "Offer",
+        "name": "Conference Registration",
+        "description": "Register by October 25, 2025, for MHLRP 2025.",
+        "validThrough": "2025-10-25",
+        "url": `${baseUrl}/registration`
+      }
+    ]
+  }
+};
+
+
 const keynoteSpeakers = [
   {
     name: "To be",
@@ -86,7 +141,7 @@ const importantDates = [
     link: "/schedule",
   },
   {
-    date: "6th October, 2025",
+    date: "15th September, 2025",
     event: "Early Bird Registration Ends",
     link: "/registration",
   },
@@ -136,33 +191,6 @@ const Homepage = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, [heroImages.length]);
 
-  const eventData = {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: conferenceName,
-    startDate: "2025-11-06",
-    endDate: "2025-11-07",
-    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    eventStatus: "https://schema.org/EventScheduled",
-    location: {
-      "@type": "Place",
-      name: venue,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Nirjuli",
-        addressLocality: "Itanagar",
-        addressRegion: "Arunachal Pradesh",
-        postalCode: "791109",
-        addressCountry: "IN",
-      },
-    },
-    description: aboutText,
-    organizer: {
-      "@type": "Organization",
-      name: hosting,
-      url: "https://nerist.ac.in/humanities-and-social-sciences-department/",
-    },
-  };
 
   return (
       <motion.div
@@ -173,39 +201,31 @@ const Homepage = () => {
       >
 
         <Helmet>
-        <title>MHLRP 2025: Mental Health Conference | NERIST</title>
-        <meta
-          name="description"
-          content="Join us on November 6-7, 2025, at NERIST for an international conference focusing on mental health challenges in marginalized communities. Explore inclusive solutions with global experts."
-        />
+        <title>Home | {conferenceShortForm}: Mental Health Conference | NERIST</title>
+        <meta name="description" content={homepageDescription} />
         <meta
           name="keywords"
-          content="mental health conference, NERIST, Arunachal Pradesh, India, 2025, marginalized communities, peripheralized groups, socio-economic factors, cultural perspectives, trauma, technology in mental health"
+          content="MHLRP 2025, mental health conference, NERIST, Arunachal Pradesh, 2025, peripheralized communities, abstract submission, call for papers, registration 2025, Microsoft CMT peer review"
         />
         <meta property="og:title" content={conferenceName} />
         <meta
           property="og:description"
-          content="An international conference at NERIST addressing mental health in peripheralized communities."
+          content="Join MHLRP 2025 on November 6-7, 2025, at NERIST to address mental health for peripheralized communities. Submit abstracts by July 31, 2025."
         />
-        <meta property="og:image" content={aboutImage} />
-        <meta
-          property="og:url"
-          content="https://your-conference-website.com"
-        />{" "}
-        {/* Replace with actual URL */}
+        <meta property="og:site_name" content="MHLRP 2025" />
+        <meta property="og:image" content={`${baseUrl}${logoImage}`} />
+        <meta property="og:url" content={baseUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={conferenceName} />
         <meta
-          name="twitter:description"
-          content="An international conference at NERIST addressing mental health in peripheralized communities."
+          property="twitter:description"
+          content="Join MHLRP 2025 on November 6-7, 2025, at NERIST to address mental health for peripheralized communities. Submit abstracts by July 31, 2025."
         />
-        <meta name="twitter:image" content={aboutImage} />
-        <script type="application/ld+json">{JSON.stringify(eventData)}</script>
-        <link rel="canonical" href="https://your-conference-website.com" />{" "}
-        {/* Replace with actual URL */}
+        <meta property="twitter:image" content={`${baseUrl}${logoImage}`} />
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <link rel="canonical" href={baseUrl} />
       </Helmet>
-
 
 
         {/* Hero Section with Image Slider */}
@@ -326,6 +346,13 @@ const Homepage = () => {
             </motion.div>
           </div>
         </section>
+
+         {/* --- Scrolling Notification Component --- */}
+      <ScrollingNotification
+        text="📢 The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+        speed={70} // You can adjust the speed (pixels per second)
+      />
+      {/* -------------------------------------- */}
 
         {/* About the Conference Section */}
         <section className="py-16 bg-white">

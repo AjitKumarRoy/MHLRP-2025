@@ -66,7 +66,7 @@ const ScrollingNotification = ({ text, speed = 60 }) => { // speed in pixels per
         return (
             <div
                 ref={containerRef}
-                className="fixed bottom-0 left-0 w-full bg-purple-200 py-2 shadow-md z-50 overflow-hidden"
+                className="relative w-full bg-purple-200 py-2 shadow-md z-10 overflow-hidden"
                 aria-live="polite" // For accessibility
             >
                 {/* Render text statically for measurement if animationProps aren't ready, but hide it */}
@@ -80,7 +80,7 @@ const ScrollingNotification = ({ text, speed = 60 }) => { // speed in pixels per
     return (
         <div
             ref={containerRef} // Ensure containerRef is always on the outer div
-            className="fixed bottom-0 left-0 w-full bg-purple-200 py-2 shadow-md z-50 overflow-hidden"
+            className="relative w-full bg-purple-200 py-2 shadow-md z-10 overflow-hidden"
             aria-live="polite" // For accessibility, indicating content may change
         >
             <motion.div

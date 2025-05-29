@@ -18,7 +18,7 @@ const venue =
 const importantDatesDescription =
   "Discover key deadlines for MHLRP 2025, including abstract submission by July 31, 2025, and conference dates on November 6-7, 2025, at NERIST, Arunachal Pradesh.";
 const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
-const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
 
 // Structured data for the Important Dates page
 const eventData = {
@@ -171,6 +171,8 @@ const ImportantDates = () => {
       initial="initial"
       animate="animate"
     >
+        <ScrollingNotification text="📢 Publication of the selected papers in a journal or edited
+ volume format by reputed publishers." />
       <Helmet>
         <title>
           Important Dates | {conferenceShortForm}: Mental Health Conference |
@@ -266,8 +268,6 @@ const ImportantDates = () => {
             </motion.div>
           ))}
         </div>
-        <ScrollingNotification text=" Publication of the selected papers in a journal or edited
- volume format by reputed publishers." />
       </div>
     </motion.div>
   );

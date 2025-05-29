@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import {
   FaUserGraduate,
   FaUniversity,
@@ -95,6 +96,9 @@ const buttonVariants = {
 };
 
 const Registration = () => {
+  const baseUrl = "https://mhlrp2025.com";
+
+
   return (
     <motion.div
       className="min-h-screen py-20 bg-gradient-to-br from-teal-50 to-cyan-100"
@@ -102,6 +106,37 @@ const Registration = () => {
       initial="initial"
       animate="animate"
     >
+
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>Registration | MHLRP 2025 International Conference</title>
+        <meta
+          name="description"
+          content="Register for MHLRP 2025, the International Conference on Mental Health and Life Resilience Psychology, November 6-7, 2025, at NERIST. Choose from PhD Scholars, Faculty, or Industry tiers."
+        />
+        <meta
+          name="keywords"
+          content="MHLRP 2025 registration, mental health conference registration, NERIST conference 2025, PhD scholars registration, faculty registration, international psychology conference"
+        />
+        <meta property="og:title" content="Registration | MHLRP 2025 International Conference" />
+        <meta
+          property="og:description"
+          content="Join MHLRP 2025 on November 6-7 at NERIST. Register as a PhD Scholar, Faculty, or Industry Delegate. Early bird discounts available until October 25, 2025."
+        />
+        <meta property="og:image" content={`${baseUrl}/assets/mhlrp-logo.png`} />
+        <meta property="og:url" content={`${baseUrl}/registration`} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Registration | MHLRP 2025 International Conference" />
+        <meta
+          name="twitter:description"
+          content="Register for MHLRP 2025 at NERIST. Secure your spot for the mental health and psychology conference with early bird pricing."
+        />
+        <meta name="twitter:image" content={`${baseUrl}/assets/mhlrp-logo.png`} />
+        <link rel="canonical" href={`${baseUrl}/registration`} />
+      </Helmet>
+
+
       <div className="container mx-auto px-8 pt-20">
         {/* Hero Section */}
         <motion.div

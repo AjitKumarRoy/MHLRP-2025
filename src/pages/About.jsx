@@ -20,7 +20,7 @@ const venue =
 const aboutDescription =
   "Learn about MHLRP 2025, an international conference addressing mental health disparities in peripheralized communities, held on November 6-7, 2025, at NERIST, Nirjuli, Arunachal Pradesh.";
 const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
-const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
 
 
 
@@ -69,7 +69,7 @@ const cardVariants = {
 
 const About = () => {
 
-    // Structured data for the About page
+// Structured data for the About page
 const eventData = {
   "@context": "https://schema.org",
   "@type": "WebPage",

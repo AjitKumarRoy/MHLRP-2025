@@ -19,7 +19,7 @@ const venue =
 const submissionDescription =
   "Submit your research to MHLRP 2025 via our online portal. Follow the steps for abstract (by July 31, 2025) and full paper (by October 15, 2025) submission at NERIST.";
 const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
-const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
 const submissionPortalLink = "[YOUR_SUBMISSION_PORTAL_LINK]"; // Replace with actual submission portal URL
 
 // Structured data for the Paper Submission page

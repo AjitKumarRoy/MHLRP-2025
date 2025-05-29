@@ -20,7 +20,7 @@ const venue =
 const callForPapersDescription =
   "Submit your research to MHLRP 2025, a mental health conference at NERIST, November 6-7, 2025. Follow our guidelines for abstracts (250 words, APA 7th edition) and full papers.";
 const logoImage = "/assets/mhlrp-logo.png"; // Production path after Vite build
-const baseUrl = "https://your-conference-website.com"; // Replace with actual domain
+const baseUrl = "https://mhlrp2025.com"; // Replace with actual domain
 
 // Structured data for the Call for Papers page
 const eventData = {
