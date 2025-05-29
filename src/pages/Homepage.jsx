@@ -350,7 +350,7 @@ const Homepage = () => {
 
          {/* --- Scrolling Notification Component --- */}
       <ScrollingNotification
-        text="📢 The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+        text="📢 6th & 7th November, 2025. Mark your calendars!"
         speed={70} // You can adjust the speed (pixels per second)
       />
       {/* -------------------------------------- */}

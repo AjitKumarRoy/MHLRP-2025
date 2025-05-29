@@ -279,6 +279,25 @@ const CallForPapers = () => {
           </div>
         </motion.div>
 
+          {/* Review Process Section */}
+        <motion.div className="mb-12" variants={cardVariants}>
+          <div className="bg-white rounded-xl shadow-md p-8">
+            <h2 className="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
+              <FaEye className="mr-2 text-purple-500" /> Review Process
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              All submitted papers will undergo a thorough double-blind
+              peer-review process by experts in the relevant fields. The
+              criteria for evaluation include originality, significance,
+              technical soundness, clarity of presentation, and relevance to the
+              conference themes.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Paper Format Section */}
         <motion.div className="mb-12" variants={cardVariants}>
           <div className="bg-white rounded-xl shadow-md p-8">
@@ -311,21 +330,7 @@ const CallForPapers = () => {
           </div>
         </motion.div>
 
-        {/* Review Process Section */}
-        <motion.div className="mb-12" variants={cardVariants}>
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h2 className="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
-              <FaEye className="mr-2 text-purple-500" /> Review Process
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              All submitted papers will undergo a thorough double-blind
-              peer-review process by experts in the relevant fields. The
-              criteria for evaluation include originality, significance,
-              technical soundness, clarity of presentation, and relevance to the
-              conference themes.
-            </p>
-          </div>
-        </motion.div>
+      
 
         {/* Publication Section */}
         <motion.div variants={cardVariants}>
