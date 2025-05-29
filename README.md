@@ -55,3 +55,58 @@ This repository contains the source code for the conference website, designed to
 | Node.js              | 20.x     | Runtime environment              |
 
 ## 📂 Project Structure
+```
+MHLRP-2025/
+├── public/                  # Static assets (e.g., mhlrp-logo.png)
+│   └── assets/              # Publicly accessible images
+├── src/                     # Source code
+│   ├── assets/              # Images (e.g., NERIST-gate.png, payment-modal.png)
+│   ├── pages/               # Route components (Registration.jsx, Venue.jsx, Contact.jsx, etc.)
+│   ├── App.jsx              # Main app with routes
+│   ├── main.jsx             # Entry point
+│   ├── index.css            # Global styles
+├── screenshots/             # README screenshots (e.g., homepage.png)
+├── .env                     # Environment variables (e.g., EmailJS keys)
+├── .gitignore               # Ignored files (e.g., node_modules, .env)
+├── prerender.js             # Manual SSG script
+├── vite.config.js           # Vite configuration
+├── package.json             # Dependencies and scripts
+├── README.md                # This file
+├── LICENSE                  # MIT License
+```
+
+
+**Note**: In `vite.config.js`, keys like `'paper-submission'` are quoted due to hyphens (invalid JavaScript identifiers); keys like `contact` are valid identifiers but quoted for consistency. This does not affect SSG functionality.
+
+## 🚀 Setup Instructions
+
+### Prerequisites
+- **Node.js**: v20.x or later
+- **npm**: v10.x or later
+- **Git**: For cloning the repository
+- **EmailJS Account**: For contact form ([dashboard.emailjs.com](https://dashboard.emailjs.com))
+
+### Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/AjitKumarRoy/MHLRP-2025.git
+   cd MHLRP-2025
+
+2. **Install Dependencies**:
+    ```bash
+    npm install
+3. **Configure Environment Variables**:
+    ```bash
+    Create a .env file in the root:
+
+    VITE_EMAILJS_SERVICE_ID=your_service_id
+    VITE_EMAILJS_TEMPLATE_ID=your_template_id
+    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+    ```
+
+    Obtain IDs from your EmailJS dashboard.
+4. **Run Locally**:
+    ```bash
+    npm run dev
+    ```
+    Open http://localhost:5173 in your browser.
