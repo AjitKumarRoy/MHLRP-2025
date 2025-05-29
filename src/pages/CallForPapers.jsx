@@ -343,21 +343,6 @@ const CallForPapers = () => {
           </div>
         </motion.div>
 
-
-
-        {/* CMT Acknowledgment */}
-        {/* <div>
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h2 className="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
-              <FaStar className="mr-2 text-purple-500" /> CMT Acknowledgment
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-            </p>
-          </div>
-        </div> */}
-
-
       </div>
     </motion.div>
   );

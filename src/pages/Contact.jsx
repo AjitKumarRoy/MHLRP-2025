@@ -69,6 +69,11 @@ const buttonVariants = {
 };
 
 const Contact = () => {
+
+  const baseUrl = "https://mhlrp2025.com";
+
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -83,8 +88,6 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    const baseUrl = "https://mhlrp2025.com";
-
     e.preventDefault();
     setIsSubmitting(true);
     setSubmissionStatus(null); // Reset status
