@@ -8,6 +8,7 @@ import {
   FaBookOpen,
   FaEye,
   FaBook,
+  FaStar,
 } from "react-icons/fa";
 
 // Conference-specific constants (consistent with About.jsx, Committee.jsx, ImportantDates.jsx)
@@ -292,9 +293,6 @@ const CallForPapers = () => {
               technical soundness, clarity of presentation, and relevance to the
               conference themes.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-            </p>
           </div>
         </motion.div>
 
@@ -334,13 +332,27 @@ const CallForPapers = () => {
 
         {/* Publication Section */}
         <motion.div variants={cardVariants}>
-          <div className="bg-white rounded-xl shadow-md p-8">
+          <div className="bg-white rounded-xl shadow-md p-8 mb-12">
             <h2 className="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
               <FaBook className="mr-2 text-purple-500" /> Publication
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Publication of the selected papers in a journal or edited volume
               format by reputed publishers.
+            </p>
+          </div>
+        </motion.div>
+
+
+
+        {/* CMT Acknowledgment */}
+        <motion.div variants={cardVariants}>
+          <div className="bg-white rounded-xl shadow-md p-8">
+            <h2 className="text-2xl font-semibold text-indigo-700 mb-4 flex items-center">
+              <FaStar className="mr-2 text-purple-500" /> CMT Acknowledgment
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>
           </div>
         </motion.div>
