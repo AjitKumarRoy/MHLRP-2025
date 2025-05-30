@@ -176,7 +176,6 @@ function Navbar() {
             ["Program Schedule", "/program-schedule"],
             ["Venue", "/venue"],
             ["Contact", "/contact"],
-            ["CMT Acknowledgement", "https://www.mhlrp2025.com/cmt-acknowledgement.html"],
           ].map(([label, path]) => (
             <li key={path}>
               <Link

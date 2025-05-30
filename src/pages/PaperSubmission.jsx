@@ -163,7 +163,7 @@ const PaperSubmission = () => {
             for a smooth submission process.
           </p>
           <motion.a
-            href="[YOUR_SUBMISSION_PORTAL_LINK]" // Replace with the actual submission portal link
+            href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FMHLRP2025" // Replace with the actual submission portal link
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-green-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:bg-green-700 transition duration-300 mt-8"

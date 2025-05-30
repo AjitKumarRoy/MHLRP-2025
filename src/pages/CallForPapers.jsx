@@ -164,14 +164,15 @@ const CallForPapers = () => {
             to share your innovative ideas and contribute to the advancement of
             Peripheralized Community.
           </p>
-          <motion.button
-            href="/submission" // Replace with your actual submission link
+          <motion.a
+            href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FMHLRP2025" 
+            target="_blank"
             className="inline-flex items-center bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:bg-purple-700 transition duration-300 mt-8"
             variants={buttonVariants}
             whileHover="hover"
           >
             <FaUpload className="mr-2" /> Submit Your Paper
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* Themes and Topics Section */}
