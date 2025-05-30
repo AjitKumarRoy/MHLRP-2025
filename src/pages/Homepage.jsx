@@ -20,9 +20,13 @@ import heroImage2 from "../assets/background-image/nerist-background2.jpg";
 import heroImage3 from "../assets/background-image/nerist-background3.jpg";
 import heroImage4 from "../assets/background-image/nerist-library.jpg";
 import aboutImage from "../assets/mhlrp-logo.png";
-import speaker1Image from "../assets/committee/demo-speaker.png";
-import speaker2Image from "../assets/committee/demo-speaker.png";
+import demoSpeaker from "../assets/committee/demo-speaker.png";
+import speaker1Image from "../assets/committee/trude-sunberg-uk.webp";
+import speaker2Image from "../assets/committee/anand-prakash-du.jfif";
+import speaker3Image from "../assets/committee/KumamDavidson.jfif";
+// Import your actual venue image
 import venueImage from "../assets/NERIST-gate.png";
+// Import sponsor logos 
 import sponsor1Logo from "../assets/knowledge-partner/bridge-logo.jpeg";
 import sponsor2Logo from "../assets/knowledge-partner/mariwala-logo.png";
 
@@ -92,26 +96,26 @@ const structuredData = {
 
 const keynoteSpeakers = [
   {
-    name: "To be",
-    title: "Updated",
-    affiliation: "soon",
+    name: "Dr. Trude Sundberg",
+    title: "Director, Q-Step Centre",
+    affiliation: "Senior Lecturer, University of Kent, United Kingdom",
     image: speaker1Image,
     link: "/speakers",
   },
   {
-    name: "To be ",
-    title: "Updated",
-    affiliation: "soon",
+    name: "Prof. Anand Prakash",
+    title: "Professor",
+    affiliation: "Department of Psychology, University of Delhi",
     image: speaker2Image,
     link: "/speakers",
   },
-  // {
-  //   name: "Dr. Trude Sundberg",
-  //   title: "Director",
-  //   affiliation: "Q-Step Centre",
-  //   image: speaker1Image,
-  //   link: "/speakers",
-  // },
+  {
+    name: "Kumam Davidson Singh",
+    title: "Founder, Matai Society & ",
+    affiliation: "Co-Founder, The Chinky Homo Project",
+    image: speaker3Image,
+    link: "/speakers",
+  },
   // Add more speakers
 ];
 const importantDates = [

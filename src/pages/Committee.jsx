@@ -34,6 +34,7 @@ import dharmeshwariRgu from "../assets/committee/Dharmeswari-rgu.png";
 import kakaliRgu from "../assets/committee/kakali-rgu.png";
 import pauloPortugal from "../assets/committee/paulo-portugal.webp";
 import tokoSamaNerist from "../assets/committee/toko-sama-nerist.png";
+import sahilNijhawan from "../assets/committee/sahilNijhawan.avif"; // Placeholder for Sahil Nijhawan
 import demoImage from "../assets/committee/demo-speaker.png"; // Placeholder for Head of HSS
 
 // Conference-specific constants (consistent with About.jsx)
@@ -176,6 +177,24 @@ const committeeMembers = [
         affiliation: "Professor (Psychology), Department of HSS",
         designation: "IIT KGP",
         image: kblKgp,
+      },
+        {
+        name: "Dr. Dharmeshwari Lourembam",
+        affiliation: "Assistant Professor, Department of Psychology",
+        designation: "RGU",
+        image: dharmeshwariRgu,
+      },
+      {
+        name: "Dr. Kakali Goswami",
+        affiliation: "Assistant Professor, Department of Psychology",
+        designation: "RGU",
+        image: kakaliRgu,
+      },
+      {
+        name: "Dr. Sahil Nijhawan",
+        affiliation: "Future Leaders Fellow",
+        designation: "Zoological Society of London",
+        image: sahilNijhawan,
       },
       {
         name: "Prof. Indraneel Bhowmik",

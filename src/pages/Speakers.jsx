@@ -19,6 +19,7 @@ import indraneelBhowmikTu from '../assets/committee/indraneel-bhowmik-tu.jpeg';
 import spkJenaDu from '../assets/committee/spk-jena-du.jfif';
 import kblKgp from '../assets/committee/kbl-kgp.jfif';
 import queerFounder from '../assets/committee/queer-founder.jfif';
+import kumamDavidson from "../assets/committee/KumamDavidson.jfif";
 
 
 // Sample speaker data (replace with your actual data and image paths)
@@ -27,31 +28,29 @@ const speakersData = [
         type: 'Keynote Speakers',
         speakers: [
             {
-                name: 'To Be',
-                designation: 'Announced',
-                affiliation: 'Soon',
-                bio: '',
-                image: speaker1, // Using imported image
-                linkedin: '',
-                twitter: '',
+                name: 'Dr. Trude Sundberg',
+                designation: 'Director',
+                affiliation: 'Q-Step Centre',
+                bio: 'Senior Lecturer, University of Kent, United Kingdom',
+                image: trudeSunbergUk, // Using imported image
+                linkedin: 'https://www.linkedin.com/in/trude-diesen-sundberg-47126722/?originalSubdomain=uk',
             },
-            // {
-            //     name: 'Dr. Eleanor Vance',
-            //     designation: 'Chief Innovation Officer',
-            //     affiliation: 'Global Tech Innovations Inc.',
-            //     bio: 'A visionary leader in AI and sustainable technology, Dr. Vance has revolutionized the industry with her groundbreaking research.',
-            //     image: speaker1, // Using imported image
-            //     linkedin: 'https://www.linkedin.com/in/eleanorvance',
-            //     twitter: 'https://twitter.com/eleanorvance',
-            // },
-            // {
-            //     name: 'Professor Kenji Tanaka',
-            //     designation: 'Professor of Robotics',
-            //     affiliation: 'Tokyo Institute of Advanced Robotics',
-            //     bio: 'A world-renowned expert in human-robot interaction and advanced automation, Professor Tanaka\'s work has been pivotal in the field.',
-            //     image: speaker2, // Using imported image
-            //     linkedin: 'https://www.linkedin.com/in/kenjitanaka',
-            // },
+            {
+                name: 'Dr. Anand Prakash',
+                designation: 'Professor',
+                affiliation: 'Department of Psychology',
+                bio: 'University of Delhi',
+                image: anandPrakashDu, // Using imported image
+                linkedin: 'https://www.linkedin.com/in/anand-prakash-a24ba99/?originalSubdomain=in',
+            },
+            {
+                name: "Kumam Davidson Singh",
+                designation: "Founder, Matai Society & ",
+                affiliation: "Co-Founder, The Chinky Homo Project",
+                bio: 'Ethnographer, Writer and Educator, Manipur',
+                image: kumamDavidson,
+                linkedin: 'https://www.linkedin.com/in/kumam-davidson-a7392870/?originalSubdomain=in',
+              },
             // Add more keynote speakers
         ],
     },
@@ -60,7 +59,7 @@ const speakersData = [
         speakers: [
             {
                 name: 'To Be',
-                designation: 'Announced',
+                designation: 'Updated',
                 affiliation: 'Soon',
                 bio: '',
                 image: speaker1, // Using imported image
