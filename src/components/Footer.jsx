@@ -78,6 +78,11 @@ const Footer = () => {
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link to="https://www.mhlrp2025.com/cmt-acknowledgement.html" className={`${linkHighlight} hover:underline`}>
+                CMT Acknowledgement
+              </Link>
+            </li>
           </ul>
         </div>
 
