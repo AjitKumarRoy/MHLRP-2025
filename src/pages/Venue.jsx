@@ -95,7 +95,7 @@ const Venue = () => {
       {/* SEO Metadata */}
       <Helmet>
         <title>Venue | MHLRP 2025 International Conference</title>
-        <link rel="canonical" href="https://mhlrp2025.com/" />
+        <link rel="canonical" href="https://mhlrp2025.com/venue" />
         <meta
           name="description"
           content="Discover the venue for MHLRP 2025 at NERIST, Nirjuli, Arunachal Pradesh, India. Learn about facilities, how to reach, and nearby accommodations."

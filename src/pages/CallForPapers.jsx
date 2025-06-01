@@ -110,7 +110,7 @@ const CallForPapers = () => {
           Call for Papers | {conferenceShortForm}: Mental Health Conference |
           NERIST
         </title>
-        <link rel="canonical" href="https://mhlrp2025.com/" />
+        <link rel="canonical" href="https://mhlrp2025.com/call-for-papers" />
         <meta name="description" content={callForPapersDescription} />
         <meta
           name="keywords"

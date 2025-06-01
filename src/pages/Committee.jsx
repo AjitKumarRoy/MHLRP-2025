@@ -512,7 +512,7 @@ const Committee = () => {
         <title>
           Committee | {conferenceShortForm}: Mental Health Conference | NERIST
         </title>
-        <link rel="canonical" href="https://mhlrp2025.com/" />
+        <link rel="canonical" href="https://mhlrp2025.com/committee" />
         <meta name="description" content={committeeDescription} />
         <meta
           name="keywords"

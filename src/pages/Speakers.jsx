@@ -192,6 +192,7 @@ const Speakers = () => {
       {/* SEO Metadata */}
       <Helmet>
         <title>Speakers | MHLRP 2025 International Conference</title>
+          <link rel="canonical" href="https://mhlrp2025.com/speakers" />
         <meta
           name="description"
           content="Meet the MHLRP 2025 keynote speakers Dr. Trude Sundberg, Dr. Anand Prakash, Kumam Davidson Singh, and invited speakers at NERIST, Nirjuli."

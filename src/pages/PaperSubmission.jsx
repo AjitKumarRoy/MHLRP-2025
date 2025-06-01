@@ -109,7 +109,7 @@ const PaperSubmission = () => {
           Paper Submission | {conferenceShortForm}: Mental Health Conference |
           NERIST
         </title>
-        <link rel="canonical" href="https://mhlrp2025.com/" />
+        <link rel="canonical" href="https://mhlrp2025.com/paper-submission" />
         <meta name="description" content={submissionDescription} />
         <meta
           name="keywords"

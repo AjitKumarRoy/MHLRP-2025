@@ -178,7 +178,7 @@ const ImportantDates = () => {
           Important Dates | {conferenceShortForm}: Mental Health Conference |
           NERIST
         </title>
-        <link rel="canonical" href="https://mhlrp2025.com/" />
+        <link rel="canonical" href="https://mhlrp2025.com/important-dates" />
         <meta name="description" content={importantDatesDescription} />
         <meta
           name="keywords"
