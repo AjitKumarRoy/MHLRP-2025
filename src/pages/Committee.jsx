@@ -34,7 +34,8 @@ import dharmeshwariRgu from "../assets/committee/Dharmeswari-rgu.png";
 import kakaliRgu from "../assets/committee/kakali-rgu.png";
 import pauloPortugal from "../assets/committee/paulo-portugal.webp";
 import tokoSamaNerist from "../assets/committee/toko-sama-nerist.png";
-import sahilNijhawan from "../assets/committee/sahilNijhawan.avif"; // Placeholder for Sahil Nijhawan
+import sahilNijhawan from "../assets/committee/sahilNijhawan.avif"; 
+import shruti from "../assets/committee/shruti.png"; 
 import demoImage from "../assets/committee/demo-speaker.png"; // Placeholder for Head of HSS
 
 // Conference-specific constants (consistent with About.jsx)
@@ -153,6 +154,12 @@ const committeeMembers = [
         affiliation: "Professor, Department of Psychology",
         designation: "University of Delhi",
         image: girishwarMishraDu,
+      },
+      {
+        name: "Dr. Shruti Chakravarty",
+        affiliation: "Feminist Advocate and Mental Health Practitioner cum Chief Advisor",
+        designation: "Mariwala Health Initiative",
+        image: shruti,
       },
       {
         name: "Dr. Trude Sundberg",
