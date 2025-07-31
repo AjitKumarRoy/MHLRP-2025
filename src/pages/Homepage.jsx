@@ -123,7 +123,7 @@ const keynoteSpeakers = [
 ];
 const importantDates = [
   {
-    date: "31st July, 2025",
+    date: "15th August, 2025",
     event: "Abstract Submission Deadline",
     link: "/paper-submission",
   },

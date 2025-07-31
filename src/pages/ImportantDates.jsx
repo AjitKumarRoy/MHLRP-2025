@@ -105,7 +105,7 @@ const importantDates = [
     description: "The submission portal for research papers opens.",
   },
   {
-    date: "31st July, 2025",
+    date: "15th August, 2025",
     event: "Last date for Abstract Submission",
     status: "critical",
     description: "The last date to submit your abstract for MHLRP 2025.",
