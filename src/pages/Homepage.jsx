@@ -128,7 +128,7 @@ const importantDates = [
     link: "/paper-submission",
   },
   {
-    date: " 15th August, 2025",
+    date: " 30th August, 2025",
     event: "Confirmation of Acceptance",
     link: "/paper-submission",
   },

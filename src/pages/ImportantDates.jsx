@@ -66,7 +66,7 @@ const eventData = {
       },
       {
         "@type": "Schedule",
-        startDate: "2025-08-15",
+        startDate: "2025-08-30",
         name: "Notification of Acceptance",
         description:
           "Authors will be notified about the status of their submitted abstract.",
@@ -111,7 +111,7 @@ const importantDates = [
     description: "The last date to submit your abstract for MHLRP 2025.",
   },
   {
-    date: "15th August, 2025",
+    date: "30th August, 2025",
     event: "Notification of Acceptance",
     status: "upcoming",
     description:
