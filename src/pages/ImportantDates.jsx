@@ -111,7 +111,7 @@ const importantDates = [
     description: "The last date to submit your abstract for MHLRP 2025.",
   },
   {
-    date: "4th September, 2025",
+    date: "6th September, 2025",
     event: "Notification of Acceptance",
     status: "upcoming",
     description:
