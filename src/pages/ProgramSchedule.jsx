@@ -2,58 +2,126 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaClock, FaMapMarkerAlt, FaUser, FaTags } from 'react-icons/fa';
 
-// Sample program schedule data (replace with your actual data)
+// Updated program schedule data from the image
 const programSchedule = [
     {
-        day: 'July 25, 2025',
+        day: 'Inaugural Session', // Updated day title from the image
         sessions: [
             {
-                time: '9:00 - 10:00',
-                title: 'Opening Ceremony & Keynote Address',
-                speaker: 'Dr. Anya Sharma',
-                venue: 'Main Auditorium',
+                time: '08:30 - 09:30 A.M.',
+                title: 'Registration',
+                speaker: 'N/A',
+                venue: 'Main Hall', // Added a default venue
+                type: 'general',
+            },
+            {
+                time: '09:30 - 09:35 A.M.',
+                title: 'Welcome Address by HoD, HSS',
+                speaker: 'Prof. R. Barthakur',
+                venue: 'Main Hall',
+                type: 'general',
+            },
+            {
+                time: '09:35 - 09:40 A.M.',
+                title: 'Lighting of the Lamp',
+                speaker: 'N/A',
+                venue: 'Main Hall',
+                type: 'ceremony',
+            },
+            {
+                time: '09:40 - 09:50 A.M.',
+                title: 'Felicitation of the Guests',
+                speaker: 'N/A',
+                venue: 'Main Hall',
+                type: 'ceremony',
+            },
+            {
+                time: '09:50 - 10:00 A.M.',
+                title: 'Conference Overview',
+                speaker: 'Dr. Yuma Narah',
+                venue: 'Main Hall',
+                type: 'general',
+            },
+            {
+                time: '10:00 - 10:10 A.M.',
+                title: 'Address by Director, NERIST',
+                speaker: 'Prof. Narendranath S.',
+                venue: 'Main Hall',
+                type: 'talk',
+            },
+            {
+                time: '10:10 - 10:20 AM',
+                title: 'Address by Director, SJETA',
+                speaker: 'Shri Yumlam Kaha',
+                venue: 'Main Hall',
+                type: 'talk',
+            },
+            {
+                time: '10:20 - 10:30 A.M.',
+                title: 'Address by the Special Invitee',
+                speaker: 'Dr. Nikhil Sengupta',
+                venue: 'Main Hall',
+                type: 'talk',
+            },
+            {
+                time: '10:30 - 10:40 A.M.',
+                title: 'Address by the Guest of Honour',
+                speaker: 'Prof. Rita Rani Talukdar',
+                venue: 'Main Hall',
+                type: 'talk',
+            },
+            {
+                time: '10:40 - 10:45 A.M.',
+                title: 'Book Release under TRI Projects',
+                speaker: 'Dr. Bikash Bage',
+                venue: 'Main Hall',
+                type: 'ceremony',
+            },
+            {
+                time: '10:45 - 11:40 A.M.',
+                title: 'Address by Chief Guest cum Keynote Speech',
+                speaker: 'Prof. Anand Prakash',
+                venue: 'Main Hall',
                 type: 'keynote',
-                description: 'Welcome address and keynote speech on the future of ICT.',
             },
             {
-                time: '10:30 - 12:00',
-                title: 'Technical Track 1: Artificial Intelligence',
-                speaker: 'Various Presenters',
-                venue: 'Room 101',
-                type: 'technical',
+                time: '11:45 - 11:50 A.M.',
+                title: 'Vote of Thanks',
+                speaker: 'Dr. Ravi Kumar Gupta',
+                venue: 'Main Hall',
+                type: 'general',
             },
             {
-                time: '10:30 - 12:00',
-                title: 'Workshop: Machine Learning Fundamentals',
-                speaker: 'Dr. Ben Carter',
-                venue: 'Workshop Hall A',
-                type: 'workshop',
+                time: '11:50 A.M.',
+                title: 'National Anthem',
+                speaker: 'N/A',
+                venue: 'Main Hall',
+                type: 'ceremony',
             },
-            // Add more sessions for July 25th
+            {
+                time: 'Following Anthem',
+                title: 'Group Photograph followed by High Tea',
+                speaker: 'N/A',
+                venue: 'Outside Hall',
+                type: 'break',
+            },
+            {
+                time: '12:00 PM - 01:00 PM',
+                title: 'Plenary Session',
+                speaker: 'Prof. Trude Sundberg',
+                venue: 'Main Hall',
+                type: 'plenary',
+            },
+            {
+                time: '01:00 PM',
+                title: 'Lunch Break',
+                speaker: 'N/A',
+                venue: 'Dining Area',
+                type: 'break',
+            },
         ],
     },
-    {
-        day: 'July 26, 2025',
-        sessions: [
-            {
-                time: '9:00 - 10:30',
-                title: 'Invited Talk: Cybersecurity Challenges',
-                speaker: 'Ms. Chloe Davis',
-                venue: 'Main Auditorium',
-                type: 'invited',
-                description: 'An insightful talk on the evolving landscape of cybersecurity threats.',
-            },
-            {
-                time: '11:00 - 12:30',
-                title: 'Technical Track 2: Cloud Computing',
-                speaker: 'Various Presenters',
-                venue: 'Room 102',
-                type: 'technical',
-            },
-            // Add more sessions for July 26th
-        ],
-    },
-    // Add more days as needed
+    // Removed the sample "July 26, 2025" day
 ];
 
 const containerVariants = {
@@ -72,12 +140,18 @@ const sessionVariants = {
     hover: { scale: 1.01, boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', transition: { duration: 0.2 } },
 };
 
+// Updated colors to include new types
 const sessionColors = {
     keynote: 'bg-teal-100 text-teal-700 border-teal-500',
+    plenary: 'bg-blue-100 text-blue-700 border-blue-500',
+    talk: 'bg-purple-100 text-purple-700 border-purple-500',
+    ceremony: 'bg-yellow-100 text-yellow-700 border-yellow-500',
+    general: 'bg-gray-100 text-gray-700 border-gray-500',
+    break: 'bg-indigo-100 text-indigo-700 border-indigo-500',
+    // Original types (you can keep or remove them)
     invited: 'bg-purple-100 text-purple-700 border-purple-500',
     technical: 'bg-green-100 text-green-700 border-green-500',
     workshop: 'bg-orange-100 text-orange-700 border-orange-500',
-    // Add more types and colors as needed
 };
 
 const ProgramSchedule = () => {
@@ -131,7 +205,10 @@ const ProgramSchedule = () => {
                                         <p className="text-gray-700 mt-3">{session.description}</p>
                                     )}
                                     <div className="mt-3">
-                                        <span className={`inline-block bg-${sessionColors[session.type]?.split('-')[1]}-100 text-${sessionColors[session.type]?.split('-')[1]}-700 rounded-full px-3 py-1 text-sm font-semibold`}>{session.type.toUpperCase()}</span>
+                                        {/* This logic dynamically pulls the color from sessionColors */}
+                                        <span className={`inline-block bg-${sessionColors[session.type]?.split('-')[1]}-100 text-${sessionColors[session.type]?.split('-')[1]}-700 rounded-full px-3 py-1 text-sm font-semibold`}>
+                                            {session.type.toUpperCase()}
+                                        </span>
                                     </div>
                                 </motion.div>
                             ))}
